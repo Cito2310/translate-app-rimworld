@@ -1,5 +1,6 @@
 import { writeFileSync } from "fs"
-import { create } from "xmlbuilder2"
+import { create }  from "xmlbuilder";
+
 
 interface props {
     path: string;
@@ -8,9 +9,9 @@ interface props {
 }
 
 export const generateXML = ({ data, path }: props): void => {
-    const xmlData = create({ version: "1.0", encoding: "utf-8" }, {
+    const xmlData = create({
         LanguageData: data
-    }).end({ prettyPrint: true })
+    }, { version: "1.0", encoding: "utf-8" }).end({ pretty: true })
 
     writeFileSync( path, xmlData )
 }

@@ -2,7 +2,9 @@ import { mkdirSync, rmSync } from "fs";
 import { join as pathJoin } from "path";
 
 import { generateXML } from "./";
-import { KeyedData, DefinjectedData } from "../types";
+
+import { DefinjectedData } from "../../types/DefInjectedData";
+import { KeyedData } from "../../types/KeyedData";
 
 interface props {
     defInjected: DefinjectedData[];
@@ -12,7 +14,7 @@ interface props {
 
 // Esta funcion tiene el objetivo de parsear los datos de DefInjected y Keyed, y establecer las rutas para que lo use generateXML
 export const outputTranslate = ({ defInjected, keyed, prefix }: props) => {
-    const pathDir = pathJoin(__dirname, "../../", "dir");
+    const pathDir = pathJoin(__dirname, "../../../", "dir");
     const pathDefInjected = pathJoin(pathDir, "DefInjected");
     const pathKeyed = pathJoin(pathDir, "Keyed");
 
@@ -37,7 +39,7 @@ export const outputTranslate = ({ defInjected, keyed, prefix }: props) => {
 
     // GENERAR ARCHIVOS
     // Resetea la carpeta dir
-    rmSync( pathDir, { recursive: true })
+    rmSync( pathDir, { recursive: true, force: true })
 
     // Generar carpeta: DefInjected
     mkdirSync( pathDefInjected, { recursive: true } )

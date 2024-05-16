@@ -1,8 +1,9 @@
 declare global {
     interface Window {
         electronAPI: {
-            basicOnIpc: ( value: string ) => unknown,
-            basicHandleIpc: ( value: string ) => unknown,
+            readFileTranslate: () => Promise<string[][]>,
+            getDataWithException: ( baseData: string[][], excludeData: string[][] ) => Promise<string[][]>,
+            generateFilesTranslate: ( keyedData: KeyedData, defInjectedData: DefinjectedData, prefix?: string ) => Promise<undefined>,
         }
     }
 }

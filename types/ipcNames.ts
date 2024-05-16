@@ -1,3 +1,4 @@
 export type ipcNames = 
-    "basic-on-ipc" |
-    "basic-handle-ipc" 
+    "read-file-translate" |
+    "get-data-with-exception" |
+    "generate-files-translate"

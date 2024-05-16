@@ -1,4 +1,4 @@
-import { KeyedData } from "../types";
+import { KeyedData } from "../../types/KeyedData";
 
 export const getKeyedTranslation = ( dataMissing: string[][] ): KeyedData[] => {
     const sectionKeyed = dataMissing[2];
