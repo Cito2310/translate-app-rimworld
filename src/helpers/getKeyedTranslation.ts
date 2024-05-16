@@ -12,8 +12,8 @@ export const getKeyedTranslation = ( dataMissing: string[][] ): KeyedData[] => {
         return `${text[1]+text.slice(2, text.length-1)}` // elimina la primer comilla y la ultima
     })
 
-    const joinParts = firstPart.map((name, idx) => ({ 
-        name, 
+    const joinParts = firstPart.map((base, idx) => ({ 
+        base, 
         text: secondPart[idx], 
         original: withoutTitle[idx] 
     }));
