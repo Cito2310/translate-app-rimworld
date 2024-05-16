@@ -1,6 +1,5 @@
 import { useForm } from "react-hook-form";
-import { DefinjectedData } from "../../types/DefInjectedData";
-import { KeyedData } from "../../types/KeyedData";
+import { parseData } from "../helpers/parseData";
 
 
 export const useControlTranslate = () => {
@@ -9,30 +8,13 @@ export const useControlTranslate = () => {
     const onClickGenerateTranslate = async() => {
         const { DefInjected, Keyed } = getValues();
 
-        let parseDefInjected: DefinjectedData[] = [];
-        for (const defType in DefInjected) {
-            for (const defBase in DefInjected[defType]) {
-                parseDefInjected.push({
-                    base: defBase.replaceAll("-", "."),
-                    type: defType,
-                    text: DefInjected[defType][defBase],
-                    original: ""
-                })
-            }
-        }
+        const parse = parseData( Keyed, DefInjected );
 
-
-        let parseKeyed: KeyedData[] = [];
-        for (const key in Keyed) {
-            parseKeyed.push({
-                name: key ,
-                text: Keyed[key],
-                original: ""
-            })
-        }
-
-
-        await window.electronAPI.generateFilesTranslate(parseKeyed, parseDefInjected, "Hussar")
+        // useEffect(() => {
+        //     window.localStorage.setItem("current-translate", JSON.stringify(getValues()));
+        // }, [watch()])
+        
+        await window.electronAPI.generateFilesTranslate(parse.keyed, parse.defInjected, "Hussar")
     }
 
 
