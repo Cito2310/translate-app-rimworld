@@ -53,15 +53,6 @@ export const useSetData = () => {
         setBaseData( data );
     }
 
-    const onClickGenerateTranslate = async() => {
-        const keyed = getKeyedTranslation( dataWithException );
-        const defInjected = getDefInjected( dataWithException );
-
-        await window.electronAPI.generateFilesTranslate(keyed, defInjected, "Hussar")
-    }
-
-
-
 
 
     // Keyed && DefInjected
@@ -81,7 +72,6 @@ export const useSetData = () => {
     return {
         onClickSetExcludeTranslate,
         onClickSetBaseTranslate,
-        onClickGenerateTranslate,
 
         keyed,
         defInjected,

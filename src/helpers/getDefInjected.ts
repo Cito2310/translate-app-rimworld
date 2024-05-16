@@ -6,7 +6,7 @@ export const getDefInjected = ( dataMissing: string[][] ): DefinjectedData[] => 
 
     const data = withoutTitle.map( str => {
         const type = str.match(/[A-Za-z]+/)![0];
-        const base = str.match(/: [A-Za-z._]+/)![0].slice(2);
+        const base = str.match(/: [A-Za-z0-9._]+/)![0].slice(2);
 
         const text = str.match(/[\'\"].+[\'\"]/)![0];
         const withoutQuotes = `${text[1]+text.slice(2, text.length-1)}`

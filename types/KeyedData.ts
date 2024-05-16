@@ -1,5 +1,5 @@
 export interface KeyedData {
-    base: string;
+    name: string;
     text: string;
     original: string;
 }

@@ -1,0 +1,1 @@
+export const replaceForForm = (str: string) => str.replaceAll(".","-")
