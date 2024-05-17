@@ -1,3 +1,5 @@
+import { Icon } from "./Icon";
+
 interface props {
     isLoad?: boolean;
     onClick: () => void;
@@ -16,8 +18,9 @@ export const TopButton = ({ isLoad, onClick, label, disabled }: props) => (
         onClick={onClick}
     >
 
-        <p>{ label }</p>
-        { isLoad && <p className="text-green-600">Cargado</p> }
+        <p className="flex items-center gap-1">
+            { label } { isLoad &&  <Icon element="check" className="text-lg text-green-600" /> }
+        </p>
 
     </button>
 

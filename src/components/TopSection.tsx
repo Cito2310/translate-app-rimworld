@@ -21,22 +21,11 @@ export const TopSection = ({
     onClickGenerateTranslate,
     registerPrefix,
     watchPrefix
-}: props) => {
+}: props) => (
 
-    const handleGenerateTranslate = () => {
-        const prefix = getPrefix();
 
-    }
-
-    useEffect(() => {
-      console.log( watchPrefix())
-    
-    }, [watchPrefix()])
-    
-
-    return (
-
-        <div className="flex gap-6 bg-black">
+    <div className="flex bg-slate-500 px-4 py-2 justify-between">
+        <div className="flex gap-2">
             <TopButton
                 isLoad={ existExcludeData() } 
                 onClick={ ()=>onSetTranslateFile("exclude") } 
@@ -46,14 +35,16 @@ export const TopSection = ({
                 isLoad={ existBaseData() } 
                 onClick={ ()=>onSetTranslateFile("base") } 
                 label="Establecer translate-base" />
+        </div>
+        
+        <input placeholder="Titulo" className="border focus:outline-none rounded px-2 border-black" {...registerPrefix("prefix")} />
 
-            <TopButton 
-                disabled={ !watchPrefix().prefix }
-                onClick={ ()=> onClickGenerateTranslate(getPrefix())  } 
-                label="Generar traducción" />
-            
-            <input className="border border-black" {...registerPrefix("prefix")} />
+        <TopButton 
+            disabled={ !watchPrefix().prefix.trim() }
+            onClick={ ()=> onClickGenerateTranslate(getPrefix())  } 
+            label="Generar traducción" />
+
     </div>
 
-    )
-}
+
+)
