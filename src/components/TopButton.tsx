@@ -12,7 +12,7 @@ export const TopButton = ({ isLoad, onClick, label, disabled }: props) => (
     <button 
         disabled={disabled}
         className="
-            p-1 border border-black rounded bg-white transition-base
+            p-1 rounded bg-white transition-base
             hover:brightness-[.98] active:brightness-[.95]  
             disabled:border-gray-400 disabled:text-gray-400 disabled:bg-gray-100 disabled:pointer-events-none" 
         onClick={onClick}

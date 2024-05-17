@@ -37,7 +37,7 @@ export const TopBar = ({
                 label="Establecer translate-base" />
         </div>
         
-        <input placeholder="Titulo" className="border focus:outline-none rounded px-2 border-black" {...registerPrefix("prefix")} />
+        <input placeholder="Titulo" className="text-lg focus:outline-none rounded px-2" {...registerPrefix("prefix")} />
 
         <TopButton 
             disabled={ !watchPrefix().prefix.trim() }

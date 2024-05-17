@@ -13,7 +13,7 @@ interface props {
 export const SectionTranslate = ({ control, defInjected, keyed, type }: props) => {
     return (
         <section>
-            <h2 className="font-semibold text-2xl px-2">defInjected</h2>
+            <h2 className="font-semibold text-2xl px-2">{type}</h2>
 
             <ul>
                 {

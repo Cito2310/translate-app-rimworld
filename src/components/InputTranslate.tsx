@@ -24,11 +24,15 @@ export const InputTranslate = ({ base, text, control, type, original, name }: pr
         render={({ field }) => <>
 
 
-            <li className="m-3 bg-white p-2 px-4 rounded">
+            <li className="m-3 bg-white p-2 px-4 rounded shadow-md border flex flex-col">
                 {
-                    base 
-                    ? <label>{`${type}: ${base}`}</label>
-                    : <label>{name}</label>
+                    <label className="mb-2">
+                        {
+                            base
+                            ? `${type}: ${base}`
+                            : name
+                        }
+                    </label>
                 }
                 
 

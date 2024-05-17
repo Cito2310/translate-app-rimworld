@@ -1,5 +1,6 @@
 import { mkdirSync, rmSync } from "fs";
 import { join as pathJoin } from "path";
+import { homedir } from "os";
 
 import { generateXML } from "./";
 
@@ -14,7 +15,8 @@ interface props {
 
 // Esta funcion tiene el objetivo de parsear los datos de DefInjected y Keyed, y establecer las rutas para que lo use generateXML
 export const outputTranslate = ({ defInjected, keyed, prefix }: props) => {
-    const pathTranslate = pathJoin(__dirname, "../../../", "dir", prefix);
+    // const pathTranslate = pathJoin(__dirname, "../../../", "dir", prefix);
+    const pathTranslate = pathJoin( homedir(), "Desktop", prefix+"_Translate");
     const pathDefInjected = pathJoin(pathTranslate, "DefInjected");
     const pathKeyed = pathJoin(pathTranslate, "Keyed");
 

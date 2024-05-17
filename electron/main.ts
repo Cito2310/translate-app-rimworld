@@ -7,11 +7,16 @@ function createWindow() {
   const win = new BrowserWindow({
     width: 800,
     height: 600,
+    show: false,
     webPreferences: {
       // contextIsolation: false,
       preload: path.join(__dirname, 'preload.js')
-    }
+    },
+    icon: "icon.ico"
   })
+
+  win.maximize();
+  win.show();
 
   if (app.isPackaged) {
     // 'build/index.html'
@@ -19,7 +24,7 @@ function createWindow() {
   } else {
     win.loadURL('http://localhost:3000/index.html');
 
-    win.webContents.openDevTools();
+    // win.webContents.openDevTools();
   }
 }
 
