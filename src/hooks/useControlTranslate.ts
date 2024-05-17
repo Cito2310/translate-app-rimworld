@@ -12,12 +12,12 @@ interface props {
 export const useControlTranslate = ({ DefInjected, Keyed }: props) => {
     const {watch, control, getValues} = useForm();
 
-    const onClickGenerateTranslate = async() => {
+    const onClickGenerateTranslate = async( prefix: string ) => {
         const { DefInjectedForm, KeyedForm } = getValues();
 
         const parse = parseData({ DefInjected, DefInjectedForm, Keyed, KeyedForm });
 
-        await window.electronAPI.generateFilesTranslate(parse.keyed, parse.defInjected, "Hussar")
+        await window.electronAPI.generateFilesTranslate(parse.keyed, parse.defInjected, prefix)
     }
 
     useEffect(() => {

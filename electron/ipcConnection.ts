@@ -14,7 +14,7 @@ export const ipConnection = () => {
         return null;
     })
 
-    ipcMain.handle("generate-files-translate" as ipcNames, async(e, args: { keyedData: KeyedData[], defInjectedData: DefinjectedData[], prefix?: string })=>{
+    ipcMain.handle("generate-files-translate" as ipcNames, async(e, args: { keyedData: KeyedData[], defInjectedData: DefinjectedData[], prefix: string })=>{
         const { defInjectedData, keyedData, prefix } = args;
 
         outputTranslate({ 

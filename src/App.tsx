@@ -1,8 +1,9 @@
 import { useSetData } from "./hooks/useSetData";
-import { SectionDefInjected } from "./components/SectionDefInjected";
-import { SectionKeyed } from "./components/SectionKeyed";
 import { useControlTranslate } from "./hooks/useControlTranslate";
 import { TopButton } from "./components/TopButton";
+import { SectionTranslate } from "./components/SectionTranslate";
+import { usePrefix } from "./hooks/usePrefix";
+import { TopSection } from "./components/TopSection";
 
 
 function App() {
@@ -19,31 +20,26 @@ function App() {
 
     const { control, watch, onClickGenerateTranslate } = useControlTranslate({ DefInjected: defInjected, Keyed: keyed });
 
+    const { getPrefix, registerPrefix, watchPrefix,  } = usePrefix();
+
 
     return (
-        <div className="App">
-            <div className="flex gap-6">
-                <TopButton 
-                    isLoad={ existExcludeData() } 
-                    onClick={ ()=>onSetTranslateFile("exclude") } 
-                    label="Establecer translate-exclude" />
+        <div className="bg-slate-200 pb-6">
+            <TopSection 
+                existBaseData={ existBaseData }
+                existExcludeData={ existExcludeData }
+                getPrefix={ getPrefix }
+                onClickGenerateTranslate={ onClickGenerateTranslate }
+                onSetTranslateFile={ onSetTranslateFile }
+                registerPrefix={ registerPrefix }
+                watchPrefix={ watchPrefix }
+            />
 
-                <TopButton 
-                    isLoad={ existBaseData() } 
-                    onClick={ ()=>onSetTranslateFile("base") } 
-                    label="Establecer translate-base" />
+            <div>
+                <SectionTranslate control={control} defInjected={defInjected} keyed={keyed} type="defInjected" />
 
-                <TopButton 
-                    onClick={ onClickGenerateTranslate } 
-                    label="Generar traducción" />
+                <SectionTranslate control={control} defInjected={defInjected} keyed={keyed} type="keyed" />
             </div>
-
-
-            <SectionDefInjected control={control} defInjected={defInjected} />
-
-            <SectionKeyed control={control} keyed={keyed} />
-
-            <code>{ JSON.stringify(watch()) }</code>
         </div>
     );
 }

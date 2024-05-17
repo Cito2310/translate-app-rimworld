@@ -6,5 +6,5 @@ const { contextBridge, ipcRenderer } = require('electron')
 
 contextBridge.exposeInMainWorld('electronAPI', {
     readFileTranslate: () => ipcRenderer.invoke('read-file-translate' as ipcNames),
-    generateFilesTranslate: ( keyedData: KeyedData, defInjectedData: DefinjectedData, prefix?: string ) => ipcRenderer.invoke("generate-files-translate" as ipcNames, { keyedData, defInjectedData, prefix }),
+    generateFilesTranslate: ( keyedData: KeyedData, defInjectedData: DefinjectedData, prefix: string ) => ipcRenderer.invoke("generate-files-translate" as ipcNames, { keyedData, defInjectedData, prefix }),
 })
