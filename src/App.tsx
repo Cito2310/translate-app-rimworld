@@ -2,13 +2,13 @@ import { useSetData } from "./hooks/useSetData";
 import { SectionDefInjected } from "./components/SectionDefInjected";
 import { SectionKeyed } from "./components/SectionKeyed";
 import { useControlTranslate } from "./hooks/useControlTranslate";
+import { TopButton } from "./components/TopButton";
 
 
 function App() {
 
-    const { 
-        onClickSetBaseTranslate, 
-        onClickSetExcludeTranslate,
+    const {
+        onSetTranslateFile, 
 
         existBaseData,
         existExcludeData,
@@ -22,13 +22,21 @@ function App() {
 
     return (
         <div className="App">
-            <button onClick={onClickSetExcludeTranslate}>set exclude translate</button>
-            { existExcludeData() && <p style={{ color: "green" }} >CARGADO</p> }
+            <div className="flex gap-6">
+                <TopButton 
+                    isLoad={ existExcludeData() } 
+                    onClick={ ()=>onSetTranslateFile("exclude") } 
+                    label="Establecer translate-exclude" />
 
-            <button onClick={onClickSetBaseTranslate}>set base translate</button>
-            { existBaseData() && <p style={{ color: "green" }} >CARGADO</p> }
+                <TopButton 
+                    isLoad={ existBaseData() } 
+                    onClick={ ()=>onSetTranslateFile("base") } 
+                    label="Establecer translate-base" />
 
-            <button onClick={onClickGenerateTranslate}>generate translate</button>
+                <TopButton 
+                    onClick={ onClickGenerateTranslate } 
+                    label="Generar traducción" />
+            </div>
 
 
             <SectionDefInjected control={control} defInjected={defInjected} />
