@@ -6,12 +6,12 @@ interface props {
     base: string;
     control: Control<FieldValues, any>;
     type: string;
-
+    original: string;
 }
 
-export const InputDefInjected = ({ base, text, control, type }: props) => {
+export const InputDefInjected = ({ base, text, control, type, original }: props) => {
     return <Controller 
-        name={`DefInjected.${type}.${replaceForForm(base)}`}
+        name={`DefInjectedForm.${type}.${replaceForForm(base)}`}
         control={ control }
         defaultValue={ text }
         render={({ field }) => <>
@@ -24,7 +24,7 @@ export const InputDefInjected = ({ base, text, control, type }: props) => {
                     <textarea {...field}
                         className="w-full overflow-visible focus:outline-none px-2"
                     />
-                    <p className="text-gray-400 text-sm px-2">{text}</p>
+                    <p className="text-gray-400 text-sm px-2">{original}</p>
                 </td>
             </tr>
         </>

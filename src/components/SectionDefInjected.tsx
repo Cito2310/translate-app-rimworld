@@ -21,12 +21,13 @@ export const SectionDefInjected = ({ control, defInjected }: props) => {
 
                 <tbody>
                     {
-                        defInjected.map(({ text, base, type }) => <InputDefInjected 
+                        defInjected.map(({ text, base, type, original }) => <InputDefInjected 
                             key={type+base} 
                             type={type} 
                             base={base} 
                             control={control} 
                             text={text}
+                            original={original}
                         />  )
                     }
                 </tbody>

@@ -1,4 +1,5 @@
 import { KeyedData } from "../../types/KeyedData";
+import { originalOnlyText } from "./originalOnlyText";
 
 export const getKeyedTranslation = ( dataMissing: string[][] ): KeyedData[] => {
     const sectionKeyed = dataMissing[2];
@@ -15,7 +16,7 @@ export const getKeyedTranslation = ( dataMissing: string[][] ): KeyedData[] => {
     const joinParts = firstPart.map((name, idx) => ({ 
         name, 
         text: secondPart[idx], 
-        original: withoutTitle[idx] 
+        original: originalOnlyText( withoutTitle[idx] ) 
     }));
 
     return joinParts;

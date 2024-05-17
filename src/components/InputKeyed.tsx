@@ -5,12 +5,12 @@ interface props {
     text: string;
     name: string;
     control: Control<FieldValues, any>;
-
+    original: string;
 }
 
-export const InputKeyed = ({ name, text, control }: props) => {
+export const InputKeyed = ({ name, text, control, original }: props) => {
     return <Controller 
-        name={`Keyed.${replaceForForm(name)}`}
+        name={`KeyedForm.${replaceForForm(name)}`}
         control={ control }
         defaultValue={ text }
         render={({ field }) => <>
@@ -20,7 +20,7 @@ export const InputKeyed = ({ name, text, control }: props) => {
                     <textarea {...field}
                         className="w-full overflow-visible focus:outline-none"
                     />
-                    <p className="text-gray-400 text-sm">{text}</p>
+                    <p className="text-gray-400 text-sm">{original}</p>
                 </td>
             </tr>
         </>

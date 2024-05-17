@@ -17,7 +17,7 @@ function App() {
         keyed,
     } = useSetData();
 
-    const { control, watch, onClickGenerateTranslate } = useControlTranslate();
+    const { control, watch, onClickGenerateTranslate } = useControlTranslate({ DefInjected: defInjected, Keyed: keyed });
 
 
     return (

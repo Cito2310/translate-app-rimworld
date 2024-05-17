@@ -21,11 +21,12 @@ export const SectionKeyed = ({ control, keyed }: props) => {
 
             <tbody>
                 {
-                    keyed.map(({ text, name }) => <InputKeyed 
+                    keyed.map(({ text, name, original }) => <InputKeyed 
                         key={name} 
                         name={name} 
                         control={control} 
                         text={text}
+                        original={original}
                     />  )
                 }
             </tbody>
