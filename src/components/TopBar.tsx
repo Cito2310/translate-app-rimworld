@@ -13,7 +13,7 @@ interface props {
     watchPrefix: UseFormWatch<PrefixForm>
 }
 
-export const TopSection = ({ 
+export const TopBar = ({ 
     existBaseData, 
     existExcludeData,
     getPrefix,
@@ -24,7 +24,7 @@ export const TopSection = ({
 }: props) => (
 
 
-    <div className="flex bg-slate-500 px-4 py-2 justify-between">
+    <div className="flex bg-slate-500 px-4 py-2 justify-between fixed w-full">
         <div className="flex gap-2">
             <TopButton
                 isLoad={ existExcludeData() } 

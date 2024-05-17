@@ -3,7 +3,7 @@ import { useControlTranslate } from "./hooks/useControlTranslate";
 import { TopButton } from "./components/TopButton";
 import { SectionTranslate } from "./components/SectionTranslate";
 import { usePrefix } from "./hooks/usePrefix";
-import { TopSection } from "./components/TopSection";
+import { TopBar } from "./components/TopBar";
 
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
 
     return (
         <div className="bg-slate-200 pb-6">
-            <TopSection 
+            <TopBar 
                 existBaseData={ existBaseData }
                 existExcludeData={ existExcludeData }
                 getPrefix={ getPrefix }
@@ -35,7 +35,7 @@ function App() {
                 watchPrefix={ watchPrefix }
             />
 
-            <div>
+            <div className="mx-4 pt-16">
                 <SectionTranslate control={control} defInjected={defInjected} keyed={keyed} type="defInjected" />
 
                 <SectionTranslate control={control} defInjected={defInjected} keyed={keyed} type="keyed" />
