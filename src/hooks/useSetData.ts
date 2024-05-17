@@ -9,8 +9,12 @@ export const useSetData = () => {
     const [excludeData, setExcludeData] = useState<string[][]>([]);
     const [dataWithException, setDataWithException] = useState<string[][]>([]);
 
-    const keyDataExclude = "data-exclude"
-    const keyDataBase = "data-base"
+    const [keyed, setKeyed] = useState<KeyedData[]>([]);
+    const [defInjected, setDefInjected] = useState<DefinjectedData[]>([]);
+
+    const keyDataExclude = "data-exclude";
+    const keyDataBase = "data-base";
+    const keyCurrentTranslate = "current-translate";
 
 
     
@@ -44,23 +48,28 @@ export const useSetData = () => {
     const onClickSetExcludeTranslate = async() => {
         const data = await window.electronAPI.readFileTranslate();
         window.localStorage.setItem( keyDataExclude, JSON.stringify( data ) );
+        window.localStorage.removeItem( keyCurrentTranslate );
         setExcludeData( data );
-      }
-      
+    }
+    
     const onClickSetBaseTranslate = async() => {
         const data = await window.electronAPI.readFileTranslate();
         window.localStorage.setItem( keyDataBase, JSON.stringify( data ) );
+        window.localStorage.removeItem( keyCurrentTranslate );
         setBaseData( data );
     }
 
 
 
     // Keyed && DefInjected
-    const [keyed, setKeyed] = useState<KeyedData[]>([]);
-    const [defInjected, setDefInjected] = useState<DefinjectedData[]>([]);
-
     useEffect(() => {
-        if ( dataWithException.length !== 0 ) {
+        const existCurrentTranslateLocalStorage = JSON.parse(window.localStorage.getItem( keyCurrentTranslate ) || "null");
+        
+        if ( existCurrentTranslateLocalStorage ) { 
+            setKeyed( existCurrentTranslateLocalStorage.keyed )
+            setDefInjected( existCurrentTranslateLocalStorage.defInjected )
+
+         } else if ( dataWithException.length !== 0 ) {
             setKeyed( getKeyedTranslation( dataWithException ) )
             setDefInjected( getDefInjected( dataWithException ) )
         }

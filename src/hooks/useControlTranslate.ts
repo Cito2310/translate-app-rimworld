@@ -1,5 +1,6 @@
 import { useForm } from "react-hook-form";
 import { parseData } from "../helpers/parseData";
+import { useEffect } from "react";
 
 
 export const useControlTranslate = () => {
@@ -10,12 +11,17 @@ export const useControlTranslate = () => {
 
         const parse = parseData( Keyed, DefInjected );
 
-        // useEffect(() => {
-        //     window.localStorage.setItem("current-translate", JSON.stringify(getValues()));
-        // }, [watch()])
-        
+
         await window.electronAPI.generateFilesTranslate(parse.keyed, parse.defInjected, "Hussar")
     }
+
+    useEffect(() => {
+        const { DefInjected, Keyed } = getValues();
+        if ( DefInjected || Keyed ) {
+            window.localStorage.setItem("current-translate", JSON.stringify( parseData( Keyed, DefInjected ) ))
+        }
+    }, [watch()])
+    
 
 
     return { control, watch, onClickGenerateTranslate }
