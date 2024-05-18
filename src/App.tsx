@@ -17,7 +17,7 @@ function App() {
         keyed,
     } = useSetData();
 
-    const { control, watch, onClickGenerateTranslate } = useControlTranslate({ DefInjected: defInjected, Keyed: keyed });
+    const { control, onClickGenerateTranslate } = useControlTranslate({ DefInjected: defInjected, Keyed: keyed });
 
     const { getPrefix, registerPrefix, watchPrefix,  } = usePrefix();
 

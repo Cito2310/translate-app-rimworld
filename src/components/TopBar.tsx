@@ -1,7 +1,6 @@
 import { UseFormRegister, UseFormWatch } from "react-hook-form";
 import { PrefixForm } from "../hooks/usePrefix";
 import { TopButton } from "./TopButton"
-import { useEffect } from "react";
 
 interface props {
     existExcludeData: () => boolean;
