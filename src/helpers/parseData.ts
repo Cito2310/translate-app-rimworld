@@ -18,7 +18,7 @@ export const parseData = ({
 
     let parseKeyed: KeyedData[] = [];
     for (const key in KeyedForm) {
-        const originalItem = Keyed.find( keyedValue => keyedValue.name === key  )!.original;
+        const originalItem = Keyed.find( keyedValue => keyedValue.name === (key+"").replace("--",".")  )!.original;
 
         parseKeyed.push({
             name: key ,
@@ -31,7 +31,7 @@ export const parseData = ({
     let parseDefInjected: DefinjectedData[] = [];
     for (const defType in DefInjectedForm) {
         for (const defBase in DefInjectedForm[defType]) {
-            const baseReplace = defBase.replaceAll("-", ".");
+            const baseReplace = defBase.replaceAll("--", ".");
             const originalItem = DefInjected.find( defInjectedValue => defInjectedValue.base === baseReplace && defInjectedValue.type && defType );
 
             parseDefInjected.push({
