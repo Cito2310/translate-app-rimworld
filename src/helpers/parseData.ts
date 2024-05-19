@@ -18,10 +18,10 @@ export const parseData = ({
 
     let parseKeyed: KeyedData[] = [];
     for (const key in KeyedForm) {
-        const originalItem = Keyed.find( keyedValue => keyedValue.name === (key+"").replace("--",".")  )!.original;
+        const originalItem = Keyed.find( keyedValue => keyedValue.name === key.replace("--","."))!.original
 
         parseKeyed.push({
-            name: key ,
+            name: key.replace("--", ".") ,
             text: KeyedForm[key],
             original: originalOnlyText( originalItem ),
         })
