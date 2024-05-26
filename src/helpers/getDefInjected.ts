@@ -6,7 +6,7 @@ export const getDefInjected = ( dataMissing: string[][] ): DefinjectedData[] => 
     const withoutTitle = sectionDefInjected.slice(1);
 
     const data = withoutTitle.map( (str: string) => {
-        const type = str.match(/[A-Za-z]+/)![0];
+        const type = str.match(/[A-Za-z0-9]+/)![0];
         const base = str.match(/: [A-Za-z0-9._\-]+/)![0].slice(2);
 
         const text = str.match(/[\'\"].+[\'\"]/)![0];

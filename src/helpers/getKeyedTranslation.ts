@@ -6,7 +6,7 @@ export const getKeyedTranslation = ( dataMissing: string[][] ): KeyedData[] => {
     const withoutTitle = sectionKeyed.slice(1);
 
     
-    const firstPart = withoutTitle.map( str => str.match( /[a-zA-Z_.]+/g )![0] );
+    const firstPart = withoutTitle.map( str => str.match( /[a-zA-Z0-9_.]+/g )![0] );
 
     const secondPart = withoutTitle.map(str => {
         const text = str.match(/[\'\"].+[\'\"]/)![0]; // detecta todo lo que este dentro de las comillas
