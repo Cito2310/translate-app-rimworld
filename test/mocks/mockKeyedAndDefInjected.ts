@@ -1,7 +1,7 @@
 export const mockKeyed = [
     {"name":"delayDays","text":"delay (days)","original":"'delay (days)'"},
     {"name":"VFEA.AbilityDisableReasonCooldown","text":"{0} is on cooldown for {1}","original":"'{0} is on cooldown for {1}'"},
-    {"name":"VFEA.AbilityStatsPower","text":"Power","original":"'Power'"}
+    {"name":"VFEA.Ability.StatsPower","text":"Power","original":"'Power'"}
 ]
 
 export const mockDefInjected = [

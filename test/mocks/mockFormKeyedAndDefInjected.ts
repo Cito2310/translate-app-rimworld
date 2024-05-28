@@ -1,7 +1,7 @@
 export const mockKeyedForm = {
     "delayDays": "delay (days)",
     "VFEA--AbilityDisableReasonCooldown": "{0} is on cooldown for {1}",
-    "VFEA--AbilityStatsPower": "Power",
+    "VFEA--Ability--StatsPower": "Power",
 }
 
 export const mockDefInjectedForm = {
