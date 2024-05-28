@@ -1,6 +1,6 @@
 import { AppDispatch, RootState } from "../store";
-import { controlLocalStorage } from "../../helpers/controlLocalStorage";
-import { setBase, setExclude } from "./dataTranslateSlice";
+import { controlLocalStorage } from "../../helpers";
+import { setBase, setExclude } from "./";
 
 export const startTranslateFile = ( type: "exclude" | "base" ) => {
     return async( dispatch: AppDispatch, getState: () => RootState ) => {

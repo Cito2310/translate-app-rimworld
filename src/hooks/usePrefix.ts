@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { useForm } from 'react-hook-form'
+import { controlLocalStorage } from '../helpers';
 
 export interface PrefixForm {
     prefix: string;
@@ -15,19 +16,24 @@ export const usePrefix = () => {
     const getPrefix = () => getValues("prefix").trim();
 
     useEffect(()=>{
-        const currentPrefixLocalStorage = window.localStorage.getItem("currentPrefix");
+        const currentPrefixLocalStorage = controlLocalStorage("get", "currentPrefix")
         if ( currentPrefixLocalStorage ) setValue("prefix", currentPrefixLocalStorage);
     },[])
 
     useEffect(() => {
-        if ( getPrefix().length ) window.localStorage.setItem("currentPrefix", getPrefix());
+        if ( getPrefix().length ) controlLocalStorage("set", "currentPrefix", getPrefix());
     }, [watch()])
     
+    const resetPrefix = () => {
+        controlLocalStorage("remove", "currentPrefix");
+        setValue("prefix", "");
+    }
 
     return {
         registerPrefix: register,
         getPrefix,
-        watchPrefix: watch
+        watchPrefix: watch,
+        resetPrefix
     }
 
 

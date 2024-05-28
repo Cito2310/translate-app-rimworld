@@ -1,6 +1,6 @@
 import { DefinjectedData } from "../../types/DefInjectedData";
 import { KeyedData } from "../../types/KeyedData";
-import { originalOnlyText } from "./originalOnlyText";
+import { originalOnlyText } from "./";
 
 interface props {
     KeyedForm: any;

@@ -1,9 +1,7 @@
-import { useForm } from "react-hook-form";
-import { parseData } from "../helpers/parseData";
 import { useEffect } from "react";
-import { KeyedData } from "../../types/KeyedData";
-import { DefinjectedData } from "../../types/DefInjectedData";
-import { useAppSelector } from "../store/store";
+import { useForm } from "react-hook-form";
+import { parseData } from "../helpers";
+import { useAppSelector } from "../store";
 
 
 export const useControlTranslate = () => {

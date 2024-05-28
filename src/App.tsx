@@ -1,8 +1,5 @@
-import { useSetData } from "./hooks/useSetData";
-import { useControlTranslate } from "./hooks/useControlTranslate";
-import { SectionTranslate } from "./components/SectionTranslate";
-import { usePrefix } from "./hooks/usePrefix";
-import { TopBar } from "./components/TopBar";
+import { useSetData, useControlTranslate } from "./hooks";
+import { SectionTranslate, TopBar } from "./components";
 
 
 function App() {
@@ -11,16 +8,10 @@ function App() {
 
     const { control, onClickGenerateTranslate } = useControlTranslate();
 
-    const { getPrefix, registerPrefix, watchPrefix,  } = usePrefix();
-
-
     return (
         <div className="pb-6">
             <TopBar 
-                getPrefix={ getPrefix }
                 onClickGenerateTranslate={ onClickGenerateTranslate }
-                registerPrefix={ registerPrefix }
-                watchPrefix={ watchPrefix }
             />
 
             <div className="mx-4 pt-14">

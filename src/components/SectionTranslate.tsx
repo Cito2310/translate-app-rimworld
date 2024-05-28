@@ -1,8 +1,6 @@
 import { Control, FieldValues } from "react-hook-form";
-import { DefinjectedData } from "../../types/DefInjectedData"
-import { InputTranslate } from "./InputTranslate";
-import { KeyedData } from "../../types/KeyedData";
-import { useAppSelector } from "../store/store";
+import { InputTranslate } from "./";
+import { useAppSelector } from "../store";
 
 interface props {
     control: Control<FieldValues, any>;

@@ -1,11 +1,9 @@
 import { useEffect } from "react";
-import { getKeyedTranslation } from "../helpers/getKeyedTranslation";
-import { getDefInjected } from "../helpers/getDefInjected";
-import { getDataWithException } from './../helpers/getDataWithException';
+import { controlLocalStorage, getDataWithException, getDefInjected, getKeyedTranslation } from "../helpers";
 import { CurrentTranslateLocalStorage } from "../../types/CurrentTranslateLocalStorage";
-import { useAppDispatch, useAppSelector } from "../store/store";
-import { controlLocalStorage } from "../helpers/controlLocalStorage";
-import { setBase, setDefInjected, setExclude, setKeyed } from "../store/product/dataTranslateSlice";
+import { setBase, setDefInjected, setExclude, setKeyed, useAppDispatch, useAppSelector } from "../store";
+
+
 
 export const useSetData = () => {
     const { base, exclude } = useAppSelector( state => state.dataTranslate.rawData );

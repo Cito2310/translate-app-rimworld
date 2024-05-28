@@ -1,5 +1,5 @@
 import { Control, Controller, FieldValues } from "react-hook-form";
-import { replaceForForm } from "../helpers/replaceForForm";
+import { replaceForForm } from "../helpers";
 
 interface props {
     text: string;

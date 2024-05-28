@@ -1,5 +1,5 @@
 import { DefinjectedData } from "../../types/DefInjectedData";
-import { originalOnlyText } from "./originalOnlyText";
+import { originalOnlyText } from "./";
 
 export const getDefInjected = ( dataMissing: string[][] ): DefinjectedData[] => {
     const sectionDefInjected = dataMissing[3];
