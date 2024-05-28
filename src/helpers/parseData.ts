@@ -5,20 +5,20 @@ import { originalOnlyText } from "./originalOnlyText";
 interface props {
     KeyedForm: any;
     DefInjectedForm: any;
-    Keyed: KeyedData[];
-    DefInjected: DefinjectedData[];
+    keyed: KeyedData[];
+    defInjected: DefinjectedData[];
 }
 
 export const parseData = ({
-    DefInjected,
+    defInjected,
     DefInjectedForm,
-    Keyed,
+    keyed,
     KeyedForm,
 }: props) => {
 
     let parseKeyed: KeyedData[] = [];
     for (const key in KeyedForm) {
-        const originalItem = Keyed.find( keyedValue => keyedValue.name === key.replace("--","."))!.original
+        const originalItem = keyed.find( keyedValue => keyedValue.name === key.replace("--","."))!.original
 
         parseKeyed.push({
             name: key.replace("--", ".") ,
@@ -32,7 +32,7 @@ export const parseData = ({
     for (const defType in DefInjectedForm) {
         for (const defBase in DefInjectedForm[defType]) {
             const baseReplace = defBase.replaceAll("--", ".");
-            const originalItem = DefInjected.find( defInjectedValue => defInjectedValue.base === baseReplace && defInjectedValue.type && defType );
+            const originalItem = defInjected.find( defInjectedValue => defInjectedValue.base === baseReplace && defInjectedValue.type && defType );
 
             parseDefInjected.push({
                 base: baseReplace,

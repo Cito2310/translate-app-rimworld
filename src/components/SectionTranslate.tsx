@@ -2,15 +2,16 @@ import { Control, FieldValues } from "react-hook-form";
 import { DefinjectedData } from "../../types/DefInjectedData"
 import { InputTranslate } from "./InputTranslate";
 import { KeyedData } from "../../types/KeyedData";
+import { useAppSelector } from "../store/store";
 
 interface props {
-    defInjected: DefinjectedData[];
     control: Control<FieldValues, any>;
     type: "defInjected" | "keyed";
-    keyed: KeyedData[];
 }
 
-export const SectionTranslate = ({ control, defInjected, keyed, type }: props) => {
+export const SectionTranslate = ({ control, type }: props) => {
+    const { defInjected, keyed } = useAppSelector(state => state.dataTranslate.parsedData);
+
     return (
         <section>
             <h2 className="font-semibold text-2xl px-2">{type}</h2>

@@ -8,9 +8,9 @@ import { mockParsedData } from '../mocks/mockParsedData';
 describe("test: src/helpers/parseData.ts",()=>{
 
     const dataParsed = parseData({
-        DefInjected: mockDefInjected,
+        defInjected: mockDefInjected,
         DefInjectedForm: mockDefInjectedForm,
-        Keyed: mockKeyed,
+        keyed: mockKeyed,
         KeyedForm: mockKeyedForm,
     })
 
