@@ -1,0 +1,947 @@
+Translation report for Latin American Spanish
+
+========== General load errors (0) ==========
+
+========== Def-injected translations load errors (4) ==========
+Couldn't inject Humanlike.root.children.2.children.6.debugLabel into Verse.PawnRenderTreeDef (PawnRenderTreeDefs.xml): Index out of bounds (max index is 5)
+Couldn't inject ThreatReward_Raid_Joiner.LetterLabelChasing.value.slateRef (ThreatReward_Raid_Joiner.root.nodes.7.node.parms.5.value.slateRef) into RimWorld.QuestScriptDef (Scripts_JoinerThreatCore.xml): Field or TKey parms does not exist.
+Couldn't inject ThreatReward_Raid_Joiner.LetterTextChasing.value.slateRef (ThreatReward_Raid_Joiner.root.nodes.7.node.parms.6.value.slateRef) into RimWorld.QuestScriptDef (Scripts_JoinerThreatCore.xml): Field or TKey parms does not exist.
+Couldn't inject WorkSpeedGlobal.parts.2.label into RimWorld.StatDef (Stats_Pawns_WorkGeneral.xml): Field label does not exist in type RimWorld.StatPart_Age.
+
+========== Missing keyed translations (444) ==========
+delayDays 'delay (days)' (English file: Misc.xml:38)
+VFEA.AbilityDisableReasonCooldown '{0} is on cooldown for {1}' (English file: Abilities.xml:4)
+VFEA.AbilityDisableReasonGeneral '{0} doesn't meet the requirements' (English file: Abilities.xml:5)
+VFEA.AbilityStatsPower 'Power' (English file: Abilities.xml:7)
+VFEA.AbilityStatsDuration 'Duration' (English file: Abilities.xml:8)
+VFEA.TargetMustBeHostile 'Target must be hostile' (English file: Abilities.xml:10)
+VFEA.MinRadius 'Minimum radius' (English file: Abilities.xml:12)
+VFEA.RClickToAuto 'Right-click to enable autocasting.' (English file: Abilities.xml:14)
+VFEA.RClickToNoAuto 'Right-click to disable autocasting.' (English file: Abilities.xml:15)
+NocturnalAnimals.BodyClock 'Body clock' (English file: AnimalBehaviours.xml:5)
+NocturnalAnimals.BodyClock_Description 'Determines when the animal sleeps and when it is awake.\n\nDiurnal animals sleep during the night and are awake during the day, while nocturnal animals sleep during the day and are awake during the night. Crepuscular animals are mainly active during dusk.' (English file: AnimalBehaviours.xml:6)
+NocturnalAnimals.BodyClock_Diurnal 'Diurnal' (English file: AnimalBehaviours.xml:8)
+NocturnalAnimals.BodyClock_Nocturnal 'Nocturnal' (English file: AnimalBehaviours.xml:9)
+NocturnalAnimals.BodyClock_Crepuscular 'Crepuscular' (English file: AnimalBehaviours.xml:10)
+VEF_AsexualHatched '{0} has reproduced asexually.' (English file: AnimalBehaviours.xml:13)
+VEF_AsexualCloning '{0} has cloned itself.' (English file: AnimalBehaviours.xml:14)
+VEF_AsexualHatchedEgg '{0} has sporulated.' (English file: AnimalBehaviours.xml:15)
+VEF_NotTameable 'This creature is untameable' (English file: AnimalBehaviours.xml:16)
+VEF_TimeToMetamorphosis 'Time to metamorphosis: {0}' (English file: AnimalBehaviours.xml:17)
+VEF_TimeToDie 'Animal expires in: {0}' (English file: AnimalBehaviours.xml:21)
+VEF_WarningEggExplodes 'Warning, this egg explodes when hatching!' (English file: AnimalBehaviours.xml:19)
+VEF_DisableAnimal 'Disable {0}' (English file: AnimalBehaviours.xml:23)
+VEF_StomachContents '{0} creatures swallowed whole. ' (English file: AnimalBehaviours.xml:25)
+VEF_DigestionTime 'Will be consumed in {0}' (English file: AnimalBehaviours.xml:26)
+VEF_TerrainsNeedsDiggable 'The terrain needs to be diggable to do this' (English file: AnimalBehaviours.xml:28)
+VEF_WhileCaravaning 'While caravaning, produces {0} {1} every: ' (English file: AnimalBehaviours.xml:30)
+VCE_AffectsAllAnimalMods 'These animal behaviours options will affect all animal mods that share code from the Vanilla Expanded Framework' (English file: AnimalBehaviours.xml:34)
+VCE_CorpseDecayingEffectOption 'Allow corpse decaying mechanics (for example, Helixien slug's effect)' (English file: AnimalBehaviours.xml:35)
+VCE_DigWhenHungryOption 'Allow digging when hungry mechanics (for example, Frostmites digging corpses)' (English file: AnimalBehaviours.xml:36)
+VCE_DigPeriodicallyOption 'Allows animals digging for things periodically' (English file: AnimalBehaviours.xml:37)
+VCE_AnimalParticlesOption 'Allow animal particles (gas and filth)' (English file: AnimalBehaviours.xml:38)
+VCE_AsexualReproductionOption 'Allow asexual reproduction' (English file: AnimalBehaviours.xml:39)
+VFE_AsexualReproductionDisabled 'Asexual reproduction disabled via mod options' (English file: AnimalBehaviours.xml:40)
+VCE_BlinkMechanicsOption 'Allow "blink" mechanics (for example, Skiphounds)' (English file: AnimalBehaviours.xml:41)
+VCE_BuildPeriodicallyOption 'Allow animals building things (for example, beavers building dams)' (English file: AnimalBehaviours.xml:42)
+VCE_ChargeBatteriesOption 'Allow animals recharging nearby batteries or refueling' (English file: AnimalBehaviours.xml:43)
+VCE_ExplodingEggsOption 'Allow animals' eggs that explode (such as dragons')' (English file: AnimalBehaviours.xml:44)
+VCE_HoveringOption 'Allow animals "hovering", ignoring terrain movement costs and waterstriding' (English file: AnimalBehaviours.xml:45)
+VCE_GraphicChangingOption 'Allow animals changing graphics (for example, Chameleon Yak)' (English file: AnimalBehaviours.xml:46)
+VCE_EffecterOption 'Allows animals causing hediffs, mental states or thoughts' (English file: AnimalBehaviours.xml:47)
+VCE_RegenerationOption 'Allow health regeneration (active and passive)' (English file: AnimalBehaviours.xml:48)
+VCE_ResurrectionOption 'Allow animals to auto-resurrect (for example Phoenix Owlcat)' (English file: AnimalBehaviours.xml:49)
+VCE_UntameableOption 'Allow some animals to be untameable' (English file: AnimalBehaviours.xml:50)
+VEF_AnimalsSearch 'Search:' (English file: AnimalBehaviours.xml:51)
+VEF_BillRequiresMass 'Requires {0} Kg total mass' (English file: AnimalBehaviours.xml:55)
+VWE.CannotEquipHeavy 'Weapon requires powered armor' (English file: HeavyWeapons.xml:3)
+IP_InsertFirstItemDesc 'Insert' (English file: ItemProcessorBase.xml:6)
+IP_InsertSecondItemDesc 'Insert' (English file: ItemProcessorBase.xml:7)
+IP_InsertThirdItemDesc 'Insert' (English file: ItemProcessorBase.xml:8)
+IP_InsertFourthItemDesc 'Insert' (English file: ItemProcessorBase.xml:9)
+IP_InsertVariable 'Insert {0}' (English file: ItemProcessorBase.xml:10)
+IP_Output 'Output {0}' (English file: ItemProcessorBase.xml:11)
+IP_OutputVariable 'Output {0} from {1}' (English file: ItemProcessorBase.xml:12)
+IP_OutputDesc 'Processor will output {0}. It needs to be fed {1}' (English file: ItemProcessorBase.xml:13)
+IP_InsertVariableSecond 'Insert {0} in 2nd slot' (English file: ItemProcessorBase.xml:14)
+IP_InsertVariableThird 'Insert {0} in 3rd slot' (English file: ItemProcessorBase.xml:15)
+IP_CantFindThing 'No items of that kind ({0}) found in this map' (English file: ItemProcessorBase.xml:16)
+IP_BringIngredients 'Bring Ingredients' (English file: ItemProcessorBase.xml:17)
+IP_BringIngredientsDesc 'Bring ingredients to start the process' (English file: ItemProcessorBase.xml:18)
+IP_CancelIngredients 'Cancel Bringing Ingredients' (English file: ItemProcessorBase.xml:19)
+IP_CancelIngredientsDesc 'Cancel Bringing Ingredients to this building' (English file: ItemProcessorBase.xml:20)
+IP_NoIngredientFound 'No ingredient found on map' (English file: ItemProcessorBase.xml:21)
+IP_ChooseIngredient 'Choose Ingredient' (English file: ItemProcessorBase.xml:22)
+IP_ChooseOutput 'Choose Output' (English file: ItemProcessorBase.xml:23)
+IP_ChooseIngredientSecond 'Choose Second Ingredient' (English file: ItemProcessorBase.xml:24)
+IP_ChooseIngredientThird 'Choose Third Ingredient' (English file: ItemProcessorBase.xml:25)
+IP_ChooseIngredientFourth 'Choose Fourth Ingredient' (English file: ItemProcessorBase.xml:26)
+IP_IngredientImproperlyDefined 'One of the ingredients has been improperly defined to work with the item processor, contact the mod's author' (English file: ItemProcessorBase.xml:27)
+IP_NoPowerDestroysWarning '{0} needs to be powered to start working' (English file: ItemProcessorBase.xml:28)
+IP_NoFuelDestroysWarning '{0} needs to be fueled to start working' (English file: ItemProcessorBase.xml:29)
+IP_LightDestroysWarning '{0} needs to have an adequate light level to start working' (English file: ItemProcessorBase.xml:30)
+IP_RainDestroysWarning '{0} needs to not be raining to start working' (English file: ItemProcessorBase.xml:31)
+IP_TemperatureDestroysWarning '{0} needs to have an adequate temperature ({1} - {2}) to start working' (English file: ItemProcessorBase.xml:32)
+IP_NoPowerDestroysInitialWarning 'The result is spoiling due to a power failure in the item processor' (English file: ItemProcessorBase.xml:33)
+IP_NoPowerDestroysMessage 'The result has spoiled due to a power failure in the item processor' (English file: ItemProcessorBase.xml:34)
+IP_GenericProductFinished 'A product has finished processing and is waiting for pickup' (English file: ItemProcessorBase.xml:35)
+IP_IsEmpty '{0} is empty' (English file: ItemProcessorBase.xml:36)
+IP_FilledWith '{0} is filled with {1}' (English file: ItemProcessorBase.xml:37)
+IP_FilledWithSecond '{0}'s 2nd slot is filled with {1}' (English file: ItemProcessorBase.xml:38)
+IP_FilledWithThird '{0}'s 3rd slot is filled with {1}' (English file: ItemProcessorBase.xml:39)
+IP_FilledWithFourth '{0}'s 4th slot is filled with {1}' (English file: ItemProcessorBase.xml:40)
+IP_IngredientPercentage ' (filled at {0} of {1})' (English file: ItemProcessorBase.xml:41)
+IP_ProcessorWorking '{0} is working: ' (English file: ItemProcessorBase.xml:42)
+IP_ProcessorPaused '{0} is paused: ' (English file: ItemProcessorBase.xml:43)
+IP_ProcessingInProgress '{0} is processing {1}. {2} will be ready with {3} quality in {4}' (English file: ItemProcessorBase.xml:44)
+IP_ProcessingInProgressNoQuality '{0} is processing {1}. {2} will be ready in {3}' (English file: ItemProcessorBase.xml:45)
+IP_RemoveProduct 'Remove {0} ({1})' (English file: ItemProcessorBase.xml:46)
+IP_RemoveProductDesc 'Remove {0} from the {1}. The product will be ready at the present quality level ({2})' (English file: ItemProcessorBase.xml:47)
+IP_ResetSemiautomatic 'Reset Recipes' (English file: ItemProcessorBase.xml:48)
+IP_ResetSemiautomaticDesc 'This will reset the building after the current product is finished, so a new input ingredient can be chosen' (English file: ItemProcessorBase.xml:49)
+IP_NoCombination 'No combination found for these ingredients' (English file: ItemProcessorBase.xml:50)
+IP_SetAutoQuality 'Set quality for product extraction. When the product reaches this quality, a colonist will automatically retrieve it and carry it to an stockpile if available. If not set, products will be extracted manually, or at Legendary quality.' (English file: ItemProcessorBase.xml:51)
+IP_ChooseQualityAuto 'Choose Auto Quality' (English file: ItemProcessorBase.xml:52)
+IP_QualityAutoIs 'Auto Quality: {0}' (English file: ItemProcessorBase.xml:53)
+IP_QualityAutoNot 'Disable Auto Quality' (English file: ItemProcessorBase.xml:54)
+IP_QualityAutoEstablished 'Auto Quality, product will be extracted at quality level: {0}' (English file: ItemProcessorBase.xml:55)
+IP_ToggleAuto 'Auto Ingredient Acquiring' (English file: ItemProcessorBase.xml:56)
+IP_ToggleAutoDesc 'If set to active, this building will automatically grab ingredients from adjacent hoppers, and automatically start working again once the product is removed. If not, colonists will haul the ingredients to the building, and it will need to be activated manually once refilled' (English file: ItemProcessorBase.xml:57)
+IP_ResetFullAuto 'Reset Machine' (English file: ItemProcessorBase.xml:58)
+IP_ResetFullAutoDesc 'Fully resets the machine and makes it stop. Warning, it will destroy the process and the input items' (English file: ItemProcessorBase.xml:59)
+IP_ProductWaiting 'Waiting for pickup' (English file: ItemProcessorBase.xml:60)
+IP_OutsideLightRange 'The process in this machine is being interrupted due to an inadequate level of light and will be spoiled soon' (English file: ItemProcessorBase.xml:61)
+IP_SpoiledDueToLight 'The product in this machine has spoiled due to an inadequate level of light' (English file: ItemProcessorBase.xml:62)
+IP_ItRains 'The process in this machine is being interrupted due to inclement weather and will be spoiled soon' (English file: ItemProcessorBase.xml:63)
+IP_SpoiledDueToRain 'The product in this machine has spoiled due to inclement weather' (English file: ItemProcessorBase.xml:64)
+IP_WrongTemp 'The process in this machine is being interrupted due to an unsuitable temperature and will be spoiled soon' (English file: ItemProcessorBase.xml:65)
+IP_SpoiledDueToWrongTemp 'The product in this machine has spoiled due to an unsuitable temperature' (English file: ItemProcessorBase.xml:66)
+IP_TempRangeInThisMachine '. This fermenter needs a temperature between {0} and {1} ºC' (English file: ItemProcessorBase.xml:67)
+IP_TogglePause 'Pause / Restart' (English file: ItemProcessorBase.xml:68)
+IP_TogglePauseDesc 'Pause / Restart this machine's processing' (English file: ItemProcessorBase.xml:69)
+IP_OverThreshold ' Waiting for output to clear. Output limit is {0}' (English file: ItemProcessorBase.xml:70)
+IP_NoRecipesHere 'No modded recipes found for this factory' (English file: ItemProcessorBase.xml:71)
+KCSG.Add 'Add' (English file: KCSG.xml:3)
+KCSG.Remove 'Remove' (English file: KCSG.xml:4)
+KCSG.SpawnNearCenter 'Spawn near center' (English file: KCSG.xml:5)
+KCSG.AllowFoggedPosition 'Allow fogged position' (English file: KCSG.xml:6)
+KCSG.SpawnPartOfEnnemyFaction 'Spawn part of ennemy faction' (English file: KCSG.xml:7)
+KCSG.Mapcontains 'Map contains' (English file: KCSG.xml:8)
+KCSG.Enter 'Enter {0}' (English file: KCSG.xml:9)
+KCSG.CantEnter 'Cannot enter {0}' (English file: KCSG.xml:10)
+VanillaFactionsExpanded.EquipShield 'Equip {0} as shield' (English file: Keys.xml:4)
+VanillaFactionsExpanded.EquipWarningShieldUnusable '(unusable with {0})' (English file: Keys.xml:5)
+VanillaFactionsExpanded.EquipWarningShieldUnusableWithWeapon '({0} will be unusable)' (English file: Keys.xml:6)
+VanillaFactionsExpanded.Protects 'Protects' (English file: Keys.xml:8)
+VanillaFactionsExpanded.Protects_Desc 'What body parts the shield protects.' (English file: Keys.xml:9)
+VanillaFactionsExpanded.ScenPart_ForcedFactionRelations 'Faction relation modifiers' (English file: Keys.xml:12)
+VanillaFactionsExpanded.NumberRange '{0} to {1}' (English file: Keys.xml:13)
+VanillaFactionsExpanded.AllFactions 'All factions' (English file: Keys.xml:14)
+VanillaFactionsExpanded.AllFactionsIncludingHidden 'All factions including hidden' (English file: Keys.xml:15)
+VanillaFactionsExpanded.AlwaysHostile 'Always hostile' (English file: Keys.xml:16)
+VanillaFactionsExpanded.AffectHiddenFactions 'Affect hidden' (English file: Keys.xml:17)
+VanillaFactionsExpanded.StartingGoodwill 'Starting' (English file: Keys.xml:18)
+VanillaFactionsExpanded.NaturalGoodwill 'Natural' (English file: Keys.xml:19)
+VanillaFactionsExpanded.UsableWithShield 'Usable with shields' (English file: Keys.xml:22)
+VanillaFactionsExpanded.UsableWithShield_Desc 'Whether or not this weapon can be used if the character also has a shield equipped.' (English file: Keys.xml:23)
+VanillaFactionsExpanded.FactionTitle 'New faction: {FactionName}' (English file: Keys.xml:26)
+VanillaFactionsExpanded.ModInfo 'This faction is added by {ModName} and not currently present in your game.' (English file: Keys.xml:27)
+VanillaFactionsExpanded.AnUnknownMod 'an unknown mod' (English file: Keys.xml:28)
+VanillaFactionsExpanded.HiddenFactionInfo 'This is a hidden faction and won't show up in your faction list.' (English file: Keys.xml:29)
+VanillaFactionsExpanded.RequiredFactionInfo 'It is marked as required by {ModName}.' (English file: Keys.xml:30)
+VanillaFactionsExpanded.NonSpawningFactionInfo 'This faction is marked as non-spawning and you should probably just ignore it.' (English file: Keys.xml:31)
+VanillaFactionsExpanded.FactionSelectOption 'Please select how to proceed:' (English file: Keys.xml:32)
+VanillaFactionsExpanded.FactionButtonAdd 'Add the faction' (English file: Keys.xml:33)
+VanillaFactionsExpanded.FactionButtonAddFull 'Add the faction with settlements' (English file: Keys.xml:34)
+VanillaFactionsExpanded.FactionButtonSkip 'Do nothing' (English file: Keys.xml:35)
+VanillaFactionsExpanded.FactionButtonIgnore 'Don't ask for this faction again' (English file: Keys.xml:36)
+VanillaFactionsExpanded.FactionMessageFailed 'Failed to add the faction.' (English file: Keys.xml:37)
+VanillaFactionsExpanded.FactionMessageFailedFull 'Failed to create a faction with settlements.' (English file: Keys.xml:38)
+VanillaFactionsExpanded.FactionMessageSuccessFull 'Added {FactionName} with {Amount} settlements.' (English file: Keys.xml:39)
+VanillaFactionsExpanded.FactionMessageSuccess 'Added {FactionName}.' (English file: Keys.xml:40)
+VanillaFactionsExpanded.FactionSettlementsToSpawn 'Settlements to spawn (recommended are {0}): {1}' (English file: Keys.xml:42)
+VanillaFactionsExpanded.FactionMinDistance 'The minimum distance from player bases (recommended are {0}): {1}' (English file: Keys.xml:43)
+VanillaFactionsExpanded.FactionButtonSpawn 'Spawn' (English file: Keys.xml:44)
+VanillaFactionsExpanded.FactionButtonCancel 'Cancel' (English file: Keys.xml:45)
+VSE.Reinforcements 'Reinforcements' (English file: Keys.xml:47)
+VSE.ReinforcementsDesc 'Seeing that your forces suffered losses, {FACTION_name} has decided to reinforce their raiding force' (English file: Keys.xml:48)
+VSE.CostGoodwill 'cost: {0} goodwill' (English file: Keys.xml:49)
+VWEL_ToggleHotshotLabel 'Weapon warm-up' (English file: Keys.xml:51)
+VWEL_ToggleHotshotDesc 'Shots fired when standing still warm-up the weapon allowing for increased firing speed. Overheating can lead to detonation.' (English file: Keys.xml:52)
+VFE_DeepDrillNo 'Deep drill cannot be used with {0}.' (English file: Keys.xml:54)
+VEF.TeleportTo 'Teleport to {0}' (English file: Keys.xml:56)
+VFEMechForceRecharge 'Force Recharge' (English file: Machines.xml:4)
+VFEMechForceRechargeDesc 'Order the associated machine to return to this platform for charging, regardless of its current battery level.' (English file: Machines.xml:5)
+VFEMechAttachTurret 'Attach Turret' (English file: Machines.xml:6)
+VFEMechAttachTurretDesc 'Construct a turret atop this mobile platform. This will require a colonist to deliver resources equal to that turret's normal construction cost.' (English file: Machines.xml:7)
+VFEMechMachineDied 'Machine destroyed' (English file: Machines.xml:8)
+VFEMechMachineDiedDesc 'One of your machines has been destroyed! You can dismantle its remains at a machining table. In order to construct a replacement, one of your colonists will need to deliver the following parts to its platform:\n\n{0}' (English file: Machines.xml:9)
+VFEMechNoResources 'Not enough resources' (English file: Machines.xml:10)
+VFEMechNoTurret 'No active mobile turret' (English file: Machines.xml:11)
+VFEMechReconstruct 'Needed to rebuild machine:' (English file: Machines.xml:12)
+VFEMechTurretResources 'Needed to construct turret:' (English file: Machines.xml:13)
+VFEMechLowerRange 'Reduce range' (English file: Machines.xml:14)
+VFEMechLowerRangeDesc 'Reduce the number of tiles this machine will travel.' (English file: Machines.xml:15)
+VFEMechRaiseRange 'Increase range' (English file: Machines.xml:16)
+VFEMechRaiseRangeDesc 'Increase the number of tiles this machine will travel.' (English file: Machines.xml:17)
+VFEMechStopMachine 'Stop machine' (English file: Machines.xml:18)
+VFEMechStopMachineDesc 'Stop this machine's progress and force it to return to base.' (English file: Machines.xml:19)
+VFEMechStartMachine 'Start machine' (English file: Machines.xml:20)
+VFEMechStartMachineDesc 'Start this machine.' (English file: Machines.xml:21)
+VFEMechMachineHitObstacle 'Machine has run into an obstacle!' (English file: Machines.xml:22)
+VFEMechSetArea 'Set area' (English file: Machines.xml:23)
+VFEMechSetAreaDesc 'Set the allowed area for all of this platform's associated machines.' (English file: Machines.xml:24)
+VFEMRideableMachineTip 'This droid is rideable. People in a caravan will ride the fastest available animals/droids, improving the speed of the caravan as a whole.' (English file: Machines.xml:25)
+VFEM.CaravanMachineRanOutPower '{MACHINE_nameDef} ran out of power, and was left behind.' (English file: Machines.xml:26)
+VFEM.DroneGainsName 'The drone's name is now {0}.' (English file: Machines.xml:27)
+MVCF.Toggle 'Toggle {0}' (English file: MVCF.xml:3)
+MVCF.ToggleUsing 'Toggle using {0} automatically' (English file: MVCF.xml:4)
+MVCF.ToggleAuto 'Toggle automatic usage' (English file: MVCF.xml:5)
+MVCF.Cooldown 'Still on cooldown. {0} left.' (English file: MVCF.xml:6)
+MVCF.Setting 'Multi-Verb Combat Framework' (English file: MVCF.xml:7)
+MVCF.Settings.Debug 'Developer Mode' (English file: MVCF.xml:8)
+MVCF.Settings.LogLevel 'Log level:' (English file: MVCF.xml:9)
+MVCF.Settings.LogLevel.None 'None' (English file: MVCF.xml:10)
+MVCF.Settings.LogLevel.Important 'Important' (English file: MVCF.xml:11)
+MVCF.Settings.LogLevel.Info 'Info' (English file: MVCF.xml:12)
+MVCF.Settings.LogLevel.Verbose 'Verbose' (English file: MVCF.xml:13)
+MVCF.Settings.LogLevel.Silly 'Silly' (English file: MVCF.xml:14)
+MVCF.Settings.LogLevel.Tick 'Tick' (English file: MVCF.xml:15)
+MVCF.ToggleAutoReload 'Toggle automatic reloading while drafted' (English file: MVCF.xml:16)
+Outposts.Settings.Title 'Vanilla Expanded Framework - Outposts' (English file: Outposts.xml:3)
+Outposts.Settings.Multiplier.Production 'Gloabal Production Multiplier: {0}' (English file: Outposts.xml:4)
+Outposts.Settings.Multiplier.Time 'Global Time Multiplier: {0}' (English file: Outposts.xml:5)
+Outposts.Settings.RaidDifficulty 'Global Raid Difficulty Multiplier: {0}' (English file: Outposts.xml:6)
+Outposts.Settings.RaidFrequency 'Raid Frequency Range' (English file: Outposts.xml:7)
+Outposts.Dialog.Create 'Create' (English file: Outposts.xml:8)
+Outposts.Commands.Create.Label 'Create Outpost' (English file: Outposts.xml:9)
+Outposts.Commands.Create.Desc 'Create a new outpost using this caravan' (English file: Outposts.xml:10)
+Outposts.Commands.TakeItems.Label 'Take items' (English file: Outposts.xml:11)
+Outposts.Commands.TakeItems.Desc 'Take items from {0} and add them to the caravan' (English file: Outposts.xml:12)
+Outposts.Commands.GiveItems.Label 'Give items' (English file: Outposts.xml:13)
+Outposts.Commands.GiveItems.Desc 'Take items from {0} and add them to the outpost' (English file: Outposts.xml:14)
+Outposts.Letters.Lost.Label 'Outpost Lost' (English file: Outposts.xml:15)
+Outposts.Letters.Lost.Text 'Regretfully, due to the deaths of all inhabitants, the outpost of {0} has been lost to us.' (English file: Outposts.xml:16)
+Outposts.Letters.BattleWon.Label 'Outpost Battle Won' (English file: Outposts.xml:17)
+Outposts.Letters.BattleWon.Text 'We have successfully won the battle for {0}.{1}' (English file: Outposts.xml:18)
+Outposts.Letters.BattleWon.Captured 'We have managed to capture {0} in the aftermath' (English file: Outposts.xml:19)
+Outposts.Letters.BattleWon.Rescued 'We have managed to recover {0}'s body' (English file: Outposts.xml:20)
+Outposts.Letters.BattleWon.Secured 'We have secured: {0} worth of goods and weapons from the raiders' (English file: Outposts.xml:21)
+Outposts.Letters.Items.Label 'Items From {0}' (English file: Outposts.xml:22)
+Outposts.Letters.Items.Text 'You have received the follow items from the outpost {0}:' (English file: Outposts.xml:23)
+Outposts.Commands.AddPawn.Label 'Add Pawn' (English file: Outposts.xml:24)
+Outposts.Commands.AddPawn.Desc 'Transfer a pawn from this caravan to the outpost' (English file: Outposts.xml:25)
+Outposts.Commands.DeliveryColony.Label 'Delivery Destination' (English file: Outposts.xml:26)
+Outposts.Commands.DeliveryColony.Desc 'Select which colony will recieve the goods. Currently: {0}' (English file: Outposts.xml:27)
+Outposts.Commands.Pack.Label 'Pack' (English file: Outposts.xml:28)
+Outposts.Commands.Pack.Desc 'Begin packing this outpost back into a caravan' (English file: Outposts.xml:29)
+Outposts.Commands.StopPack.Label 'Stop packing' (English file: Outposts.xml:30)
+Outposts.Commands.StopPack.Desc 'Cancel packing this outpost into a caravan' (English file: Outposts.xml:31)
+Outposts.Commands.Remove.Label 'Remove Pawn' (English file: Outposts.xml:32)
+Outposts.Commands.Remove.Desc 'Remove a pawn from this outpost into a new caravan' (English file: Outposts.xml:33)
+Outposts.Command.Remove.Only1 'Cannot remove pawns: Only 1 inhabitant. If you want to remove this outpost, select "Pack".' (English file: Outposts.xml:34)
+Outposts.Contains 'Contains {0} pawns' (English file: Outposts.xml:35)
+Outposts.Packing 'Packing into caravan. Done in {0}' (English file: Outposts.xml:36)
+Outposts.NotSkilledEnough 'Pawns are not skilled enough, need a cumulative {0} skill of at least {1}' (English file: Outposts.xml:37)
+Outposts.RestingAt 'Resting at outpost {0}' (English file: Outposts.xml:38)
+Outposts.WillProduce.0 'Will produce some items in {0}' (English file: Outposts.xml:39)
+Outposts.WillProduce.1 'Will produce {0} {1} in {2}' (English file: Outposts.xml:40)
+Outposts.WillProduce.2 'Will produce {0} {1} and {2} {3} in {4}' (English file: Outposts.xml:41)
+Outposts.WillProduce.N 'Will produce the following in {0}:\n{1}' (English file: Outposts.xml:42)
+Outposts.CannotBeMade 'Cannot be made in {0}' (English file: Outposts.xml:43)
+Outposts.NotEnoughPawns 'Not enough pawns in caravan, need at least {0}' (English file: Outposts.xml:44)
+Outposts.TotalSkill 'Cumulative {0} skill: {1}' (English file: Outposts.xml:45)
+Outposts.TooClose 'Too close to settlement or other outpost, must have at least 1 tile between them' (English file: Outposts.xml:46)
+Outposts.AddedFromTransportPods 'Your transport pods have arrived. {0} has been added to {1}.' (English file: Outposts.xml:47)
+Outposts.AddTo 'Add to outpost' (English file: Outposts.xml:48)
+Outposts.SendNonPawns 'Confirm sending items to the outpost? They will be permanently lost.' (English file: Outposts.xml:49)
+Outposts.AlreadyPacking 'Already packing' (English file: Outposts.xml:50)
+Outposts.Settings.DeliveryMethod 'Delivery Method' (English file: Outposts.xml:51)
+Outposts.Settings.DeliveryMethod.Teleport 'Teleport items to colony' (English file: Outposts.xml:52)
+Outposts.Settings.DeliveryMethod.PackAnimal 'Send pack animal carrying items to colony' (English file: Outposts.xml:53)
+Outposts.Settings.DeliveryMethod.Store 'Store items at outpost' (English file: Outposts.xml:54)
+Outposts.Settings.DeliveryMethod.ForcePods 'Always send drop pods' (English file: Outposts.xml:55)
+Outposts.Settings.DeliveryMethod.PackOrPods 'Pods if available, otherwise pack animal' (English file: Outposts.xml:56)
+Outposts.Abandoned 'Outpost Abandoned' (English file: Outposts.xml:57)
+Outposts.Abandoned.Desc '{0} has been abonded due to having no one inside to run it. It will very quickly be looted and taken over by nature, leaving no trace it was ever there.' (English file: Outposts.xml:58)
+Outposts.Take 'Take' (English file: Outposts.xml:59)
+Outposts.Give 'Give' (English file: Outposts.xml:60)
+Outposts.AllowedBiomes 'Must be in one of the following biomes:' (English file: Outposts.xml:61)
+Outposts.DisallowedBiomes 'Cannot be in any of the following biomes:' (English file: Outposts.xml:62)
+Outposts.NumPawns 'Must have at least {0} pawns willing to join the outpost' (English file: Outposts.xml:63)
+Outposts.RequiredSkill 'Cumulative {0} skill must be at least {1}' (English file: Outposts.xml:64)
+Outposts.GrowingRequired 'Must have ability to grow plants' (English file: Outposts.xml:65)
+Outposts.MustHaveInCaravan 'Must have {0} in caravan' (English file: Outposts.xml:66)
+Outposts.NoValidPawns 'No valid pawns to add to outpost' (English file: Outposts.xml:67)
+Outposts.SkillChange 'Due to changes in skill level, {0} can no longer produce {1}' (English file: Outposts.xml:68)
+Outposts.Setting.ProductionTime 'Production Time' (English file: Outposts.xml:69)
+Outposts.Setting.PackTime 'Pack Time' (English file: Outposts.xml:70)
+Outposts.Setting.Range 'Range' (English file: Outposts.xml:71)
+Outposts.Setting.MinimumPawns 'Minimum Pawns to Create' (English file: Outposts.xml:72)
+Outposts.Settings.Production 'Production Multiplier' (English file: Outposts.xml:73)
+Outposts.Settings.DoRaids 'Enable Outpost Raids?' (English file: Outposts.xml:74)
+PipeSystem_Consumption '{0} consumption' (English file: PipeSystem.xml:3)
+PipeSystem_ConsumptionExplained 'The amount per day of {0} this building will draw from the {1} grid.' (English file: PipeSystem.xml:4)
+PipeSystem_IdleConsumption '{0} idle consumption' (English file: PipeSystem.xml:6)
+PipeSystem_IdleConsumptionExplained 'The amount of {0} this building will draw from the {1} grid when idle.' (English file: PipeSystem.xml:7)
+PipeSystem_Production '{0} production' (English file: PipeSystem.xml:9)
+PipeSystem_ProductionExplained 'The amount per day of {0} this building will produce for the {1} grid.' (English file: PipeSystem.xml:10)
+PipeSystem_DeconstructLabel 'Deconstruct {0} pipes' (English file: PipeSystem.xml:12)
+PipeSystem_DeconstructDesc 'Only deconstruct pipes part of the {0} network.' (English file: PipeSystem.xml:13)
+PipeSystem_ResourceOutput '{0} output:' (English file: PipeSystem.xml:15)
+PipeSystem_ResourceNeeded '{0} needed:' (English file: PipeSystem.xml:16)
+PipeSystem_ResourceStored '{0} stored:' (English file: PipeSystem.xml:18)
+PipeSystem_NotConnected 'Not connected to {}.' (English file: PipeSystem.xml:20)
+PipeSystem_ExcessStored '{0} net excess/stored in network: {1} {3}/d / {2} {3}' (English file: PipeSystem.xml:21)
+PipeSystem_Stored '{0} stored in network:' (English file: PipeSystem.xml:22)
+PipeSystem_ValveClosed 'Valve closed.' (English file: PipeSystem.xml:24)
+PipeSystem_ValveOpened 'Valve opened.' (English file: PipeSystem.xml:25)
+PipeSystem_AugmentStack '+1' (English file: PipeSystem.xml:27)
+PipeSystem_AugmentStackDesc 'Augment output maximum stack size by 1.' (English file: PipeSystem.xml:28)
+PipeSystem_AugmentStackB '+10' (English file: PipeSystem.xml:29)
+PipeSystem_AugmentStackDescB 'Augment output maximum stack size by 10.' (English file: PipeSystem.xml:30)
+PipeSystem_DecreaseStack '-1' (English file: PipeSystem.xml:32)
+PipeSystem_DecreaseStackDesc 'Decrease output maximum stack size by 1.' (English file: PipeSystem.xml:33)
+PipeSystem_DecreaseStackB '-10' (English file: PipeSystem.xml:34)
+PipeSystem_DecreaseStackDescB 'Decrease output maximum stack size by 10.' (English file: PipeSystem.xml:35)
+PipeSystem_AmountOut 'Maximum amount stored here: {0}' (English file: PipeSystem.xml:37)
+PipeSystem_ProcessorBuffer 'Buffer: {0}' (English file: PipeSystem.xml:39)
+PipeSystem_Producing 'Producing {0} {1}. Cycle progress: {2}.' (English file: PipeSystem.xml:40)
+PipeSystem_Produce 'Produce {0} {1} from {2} {3}.' (English file: PipeSystem.xml:41)
+PipeSystem_ChooseResult 'Choose result' (English file: PipeSystem.xml:42)
+PipeSystem_ChooseResultDesc 'Choose processor result.' (English file: PipeSystem.xml:43)
+PipeSystem_ProduceLabel 'Produce {0} {1} using:' (English file: PipeSystem.xml:45)
+PipeSystem_TransferContent 'Transfer storage content' (English file: PipeSystem.xml:47)
+PipeSystem_TransferContentDesc 'Transfer storage content to other available storages.' (English file: PipeSystem.xml:48)
+PipeSystem_MarkedToTransferContent 'Transfering content to other available storages...' (English file: PipeSystem.xml:49)
+PipeSystem_NothingToRefill 'No thing to refill {0}' (English file: PipeSystem.xml:51)
+PipeSystem_AllowManualRefill 'Allow manual refill' (English file: PipeSystem.xml:52)
+PipeSystem_AllowManualRefillDesc 'Allow pawns to directly refill storage' (English file: PipeSystem.xml:53)
+PipeSystem_CantExtract 'Can't extract: Tanks are full' (English file: PipeSystem.xml:55)
+PipeSystem_CantPlaceHere '{0} can only be placed on the {1} deposit. Use ground-penetrating scanner to find the deposits.' (English file: PipeSystem.xml:56)
+PipeSystem_ResourceLeft 'Amount left in deposit: {0}.' (English file: PipeSystem.xml:57)
+PipeSystem_NoStorageInNet 'No storage connected' (English file: PipeSystem.xml:59)
+PipeSystem_NoStorageInNetDesc 'The following networks are not connected to any storage building, but need one:' (English file: PipeSystem.xml:60)
+PipeSystem_StorageContentRotted '{0} content rotted away due to a lack of power.' (English file: PipeSystem.xml:62)
+PipeSystem_ContentWillRot 'Content will rot in {0} due to a lack of power.' (English file: PipeSystem.xml:63)
+PipeSystem_NothingToPickUp 'Nothing to pick-up' (English file: PipeSystem.xml:65)
+PipeSystem_MakeProcess 'Make {0}' (English file: PipeSystem.xml:66)
+PipeSystem_OutputToNet '{0} to net' (English file: PipeSystem.xml:67)
+PipeSystem_OrNet 'or {0} net' (English file: PipeSystem.xml:68)
+PipeSystem_XFromNet '{0} from net' (English file: PipeSystem.xml:69)
+PipeSystem_Processes 'Processes' (English file: PipeSystem.xml:70)
+PipeSystem_AddProcess 'Add process' (English file: PipeSystem.xml:71)
+PipeSystem_CancelCurrentProcess 'Cancel current process' (English file: PipeSystem.xml:72)
+PipeSystem_OutputOnGround 'Can output on ground' (English file: PipeSystem.xml:73)
+PipeSystem_NoProcess 'No current process' (English file: PipeSystem.xml:74)
+PipeSystem_NoProcessAvailable 'No process available' (English file: PipeSystem.xml:75)
+PipeSystem_Product 'Product' (English file: PipeSystem.xml:76)
+Reloading.Unload 'Unload {GEAR_labelShort}' (English file: Reloading.xml:3)
+Reloading.NoAmmo 'No Ammo' (English file: Reloading.xml:4)
+Reloading.Ammo 'Ammo: {0} / {1}' (English file: Reloading.xml:5)
+Reloading.Reload 'Reload {GEAR} with {AMMO_label}' (English file: Reloading.xml:6)
+VEF_GeneralTitle 'General' (English file: Settings.xml:3)
+CSGTitle 'Custom structure generation:' (English file: Settings.xml:5)
+CSGLog 'Enable structure generation debugging log: ' (English file: Settings.xml:6)
+VEF_TPTitle 'Toggleable patches' (English file: Settings.xml:9)
+NeedRestart 'All settings need a restart to be applied' (English file: Settings.xml:10)
+XPatchFound '{0} patches found' (English file: Settings.xml:11)
+VEF.WeatherDamages 'Weather damages' (English file: Settings.xml:14)
+VEF.EnableWeatherDamage '{0}' (English file: Settings.xml:15)
+FDTitle 'Faction Discovery' (English file: Settings.xml:17)
+NeedToBeInGame 'You first need to load a save' (English file: Settings.xml:18)
+AskForPopUp 'Add faction(s)' (English file: Settings.xml:19)
+AskForPopUpExplained 'Click this to be asked for each faction if you want it to be added to your game' (English file: Settings.xml:20)
+CanAddXFaction '{0} faction(s) can be added to your current save' (English file: Settings.xml:21)
+VEF.DisableModSourceReport 'Disable mod source reports' (English file: Settings.xml:23)
+VEF.Shields.Search 'Search: ' (English file: Settings.xml:25)
+VEF.Shields.ResetModSettingsToDefault 'Reset mod settings to default' (English file: Settings.xml:26)
+VEF.Shields.ExplanationTitle 'Set weapons to be usable or not usable with shields.' (English file: Settings.xml:27)
+VEF.Shields.ShowMeleeWeapons 'Show melee weapons' (English file: Settings.xml:28)
+VEF.Shields.ShowRangeWeapons 'Show range weapons' (English file: Settings.xml:29)
+VEF_DisableTextureCaching 'Disable Texture Caching' (English file: Settings.xml:31)
+VEF_EnablePipeSystemNoStorageAlert 'Enable PipeSystem no storage alert' (English file: Settings.xml:32)
+VEF_FactionDiscovery 'Faction Discovery' (English file: Settings.xml:33)
+VEF_CustomStructureGeneration 'Custom Structure Generation:' (English file: Settings.xml:34)
+VEF_TextureVariations 'Texture Variations:' (English file: Settings.xml:35)
+VEF_VerboseLogging 'Verbose logging' (English file: Settings.xml:36)
+VEF_UnforbidMinedOres 'Unforbid mined ores' (English file: Settings.xml:37)
+VEF_Never 'Never' (English file: Settings.xml:38)
+VEF_HomeArea 'Home Area' (English file: Settings.xml:39)
+VEF_Always 'Always' (English file: Settings.xml:40)
+VEF_NeverDesc 'Never unforbid mined ores (this is how the base game works for non-human pawns, such as animals and mechs)' (English file: Settings.xml:41)
+VEF_HomeAreaDesc 'Ores mined by pawns are only unforbidden if mined in the home area' (English file: Settings.xml:42)
+VEF_AlwaysDesc 'Ores mined by pawns are always unforbidden' (English file: Settings.xml:43)
+VFECore.IsToo 'is too' (English file: Stats.xml:3)
+VFECore.Advanced 'advanced' (English file: Stats.xml:4)
+VFECore.Primitive 'primitive' (English file: Stats.xml:5)
+VEF.Hire 'Hire {0}' (English file: UI.xml:3)
+VEF.HireDesc 'Hire some {0} to help around the colony, for example with defense.' (English file: UI.xml:4)
+VEF.AvailableSilver 'Available Silver: {0}' (English file: UI.xml:5)
+VEF.Value 'Value' (English file: UI.xml:6)
+VEF.ChooseNumberOfUnits 'How many of that unit do you want to have?' (English file: UI.xml:7)
+VEF.Breakdown 'Breakdown' (English file: UI.xml:8)
+VEF.DayAmount 'Amount of Days' (English file: UI.xml:9)
+VEF.Cost 'Cost to hire' (English file: UI.xml:10)
+VEF.RiskMult 'Risk multiplier' (English file: UI.xml:11)
+VEF.TotalPrice 'Total Price' (English file: UI.xml:12)
+VEF.HiringDesc 'You can hire {0} for any period of time.You can only have one contract active at a time, and you cannot mix and match the factions from which you hire.\nIf hired {0} die on duty, you will incur an additional 5% increase to contract price per dead pirate on all future contracts for a full year.' (English file: UI.xml:13)
+VEF.LongTerm 'Long term contracts are significantly more expensive' (English file: UI.xml:15)
+VEF.ContractInfo 'View contract with {0}' (English file: UI.xml:16)
+VEF.PawnsList 'Contracted:' (English file: UI.xml:17)
+VEF.ContractTitle 'Contract with {0}' (English file: UI.xml:18)
+VEF.Spent 'Silver spent:' (English file: UI.xml:19)
+VEF.TimeLeft 'Time remaining:' (English file: UI.xml:20)
+VEF.CancelContract 'Cancel Contract' (English file: UI.xml:21)
+VEF.NoRefund 'Cancelling your contract will not refund the silver you spent on it.' (English file: UI.xml:22)
+VEF.Customize 'Customize {0}' (English file: UI.xml:23)
+VEF.CustomizationTitle '{0} Customization' (English file: UI.xml:24)
+VEF.Name 'Name' (English file: UI.xml:25)
+VEF.Cancel 'Cancel' (English file: UI.xml:26)
+VEF.AvailableContracts 'Available contracts: {0}' (English file: UI.xml:27)
+VEF.MechsSection 'Mechanoids' (English file: UI.xml:28)
+VEF.DoorLockDefault 'Default' (English file: UI.xml:29)
+VEF.DoorLockEveryone 'Everyone' (English file: UI.xml:30)
+VEF.DoorLockOnlyColonistsAndAnimals 'Only colonists and animals' (English file: UI.xml:31)
+VEF.DoorLockOnlyColonistsAndAnimalsAndFriendlies 'Only colonists, animals and friendlies' (English file: UI.xml:32)
+VEF.DoorLockOnlyDrafted 'Only drafted' (English file: UI.xml:33)
+VEF.DoorLockState 'Current door lock policy "{0}"' (English file: UI.xml:35)
+VEF.DoorLockStateDesc 'Click to change current door lock policy.' (English file: UI.xml:36)
+VEF.DoorLockStatePowerOff 'Power is off. Impossible to change door lock policy.' (English file: UI.xml:37)
+VCE_AllowConditions 'Allow chronic health conditions in food (Diabetes, Cholesterol and High Blood Pressure)' (English file: VanillaCookingExpanded.xml:6)
+VCE_MustBeInstalled 'Vanilla Cooking Expanded must be installed for these options to have any effect' (English file: VanillaCookingExpanded.xml:7)
+VFE_ChunkToMine 'Drill for {0}' (English file: VanillaFurniture.xml:6)
+VFE_ChunkRandomMine 'Drill for Random Chunks' (English file: VanillaFurniture.xml:7)
+VFE_ChooseMine 'Choose chunk type to drill' (English file: VanillaFurniture.xml:8)
+VFE_ChooseMineDesc 'Choose chunk type to drill. You can choose any of the map's rock types, or random' (English file: VanillaFurniture.xml:9)
+VFE_RandomRock 'Random chunk' (English file: VanillaFurniture.xml:10)
+VFE_PleaseSelectOutput 'Select machine output' (English file: VanillaFurniture.xml:11)
+VFE_NeedsWater 'This building must be placed on water' (English file: VanillaFurniture.xml:12)
+VFE_ChangeGraphic 'Random Graphic' (English file: VanillaFurniture.xml:16)
+VFE_ChangeGraphicDesc 'Change Graphic of this building randomly between those available' (English file: VanillaFurniture.xml:17)
+VFE_ChooseGraphic 'Choose Graphic' (English file: VanillaFurniture.xml:19)
+VFE_ChooseGraphicDesc 'Choose Graphic of this building via a menu with all available options' (English file: VanillaFurniture.xml:20)
+VFE_NoGraphics 'This building doesn't have extra random graphics to choose from. Some modder added the comp class to the building without alternative graphics, which is weird' (English file: VanillaFurniture.xml:22)
+VFE_HideRandomizeButton 'Hide the "Random Graphic" and "Choose Graphic" buttons' (English file: VanillaFurniture.xml:27)
+VFE_RandomBuildingsDontStartRandom 'Make random graphics buildings NOT start randomized' (English file: VanillaFurniture.xml:28)
+VFE.SwitchLightColor 'Switch light color' (English file: VanillaFurniture.xml:30)
+VFE.SwitchLightColorDesc 'Change current light colour.' (English file: VanillaFurniture.xml:31)
+VFE.ChangeColorTo 'Change color to {0}' (English file: VanillaFurniture.xml:32)
+VFE.ColorSwitchPowerOff 'Power is off. Impossible to switch color.' (English file: VanillaFurniture.xml:33)
+VGE_StatsReport_Over40 'over 40ºC' (English file: VanillaGenesExpanded.xml:6)
+VGE_StatsReport_Below0 'below 0ºC' (English file: VanillaGenesExpanded.xml:7)
+VGE_StatsReport_Armoured 'armoured' (English file: VanillaGenesExpanded.xml:8)
+VGE_StatsReport_NoSunlight 'no sunlight' (English file: VanillaGenesExpanded.xml:9)
+VGE_StatsReport_Water 'on water' (English file: VanillaGenesExpanded.xml:10)
+VGE_StatsReport_NotWater 'on dry land' (English file: VanillaGenesExpanded.xml:11)
+VGE_StatsReport_Outside 'outdoors' (English file: VanillaGenesExpanded.xml:12)
+VGE_StatsReport_Inside 'indoors' (English file: VanillaGenesExpanded.xml:13)
+VGE_StatsReport_InLight 'above 50% lit' (English file: VanillaGenesExpanded.xml:14)
+VGE_StatsReport_InDarkness 'below 50% lit' (English file: VanillaGenesExpanded.xml:15)
+VGE_StatsReport_InPain 'in pain' (English file: VanillaGenesExpanded.xml:16)
+VGE_StatsReport_InPollution 'in polluted terrain' (English file: VanillaGenesExpanded.xml:17)
+VGE_StatsReport_ColonyMap 'on colony map' (English file: VanillaGenesExpanded.xml:18)
+VGE_StatsReport_OutsideColonyMap 'outside colony map' (English file: VanillaGenesExpanded.xml:19)
+VGE_StatsReport_AnyLightSensitivity 'light sensitivity' (English file: VanillaGenesExpanded.xml:20)
+VGE_EggPregnancy '{0}'s eggs have been fertilized! The egglaying process will continue until a fertile egg is laid.' (English file: VanillaGenesExpanded.xml:22)
+VGE_EggPregnancyLabel '{0} fertilized!' (English file: VanillaGenesExpanded.xml:23)
+VGE_EggLaid '{0} has laid an egg! Keep it warm and protected.' (English file: VanillaGenesExpanded.xml:25)
+VGE_EggLaidLabel '{0} laid an egg!' (English file: VanillaGenesExpanded.xml:26)
+VGE_EggHatched '{0} has hatched from an egg!' (English file: VanillaGenesExpanded.xml:28)
+VGE_EggHatchedLabel '{0} hatched!' (English file: VanillaGenesExpanded.xml:29)
+VGE_Male_Egg 'Males don't lay eggs' (English file: VanillaGenesExpanded.xml:31)
+VGE_PregnancyFactor 'Pregnancy factor gene: {0} gestation speed' (English file: VanillaGenesExpanded.xml:33)
+VGE_ForGenderOnly '{0} only gene.' (English file: VanillaGenesExpanded.xml:35)
+VME_MessageNeedsThePairedMeme '{0} needs one of the following memes to be chosen too to work: {1}' (English file: VanillaMemesExpanded.xml:6)
+
+========== Def-injected translations missing (291) ==========
+ApparelLayerDef: VFEC_OuterShell.label 'on top'
+DamageDef: VEF_SecondaryAcidBurn.label 'acid burn'
+DamageDef: VEF_SecondaryAcidBurn.deathMessage '{0} has been corroded to death.'
+DamageDef: VEF_PermanentBurn.label 'permanent burn'
+DamageDef: VEF_PermanentBurn.deathMessage '{0} has been killed by burning.'
+HediffDef: VEF_PermanentBurn.label 'permanent burn'
+HediffDef: VEF_PermanentBurn.description 'A permanent burn scar that cannot be treated.'
+HediffDef: VEF_PermanentBurn.comps.HediffComp_GetsPermanent.permanentLabel 'permanent burn'
+HediffDef: VEF_PermanentBurn.injuryProps.destroyedLabel 'Burned off'
+HediffDef: VEF_PermanentBurn.injuryProps.destroyedOutLabel 'Burned out'
+HediffDef: VEF_PermanentBurn.labelNoun 'a permanent burn'
+HediffDef: VEF_PermanentBurn.labelNounPretty '{0} in the {1}'
+HediffDef: VEF_AcidBuildup.label 'acid burn'
+HediffDef: VEF_AcidBuildup.description 'A splash of acid that continues to cause burn wounds for quite some time after the initial attack.'
+HediffDef: VEF_AcidBuildup.stages.minor_receiving_burns.label 'minor, receiving burns'
+HediffDef: VEF_AcidBuildup.stages.moderate_receiving_burns.label 'moderate, receiving burns'
+HediffDef: VEF_AcidBuildup.stages.serious_receiving_burns.label 'serious, receiving burns'
+HediffDef: VEF_AcidBurn.label 'acid burn'
+HediffDef: VEF_AcidBurn.description 'An acid burn.'
+HediffDef: VEF_AcidBurn.comps.HediffComp_GetsPermanent.permanentLabel 'acid burn scar'
+HediffDef: VEF_AcidBurn.labelNoun 'an acid burn'
+HediffDef: VEF_AcidBurn.labelNounPretty '{0} in the {1}'
+HediffDef: VEF_LightSustenance.label 'level of sunlight'
+HediffDef: VEF_LightSustenance.description 'This creature feeds on sunlight. Inadequate levels of light will kill it.'
+HediffDef: VEF_LightSustenance.stages.adequate_light.label 'adequate light'
+HediffDef: VEF_LightSustenance.stages.poor_light_levels.label 'poor light levels'
+HediffDef: VEF_LightSustenance.stages.very_low_light_levels.label 'very low light levels'
+HediffDef: VEF_LightSustenance.stages.lack_of_sunlight.label 'lack of sunlight'
+HediffDef: VEF_LightSustenance.stages.extreme_lack_of_sustenance.label 'extreme lack of sustenance'
+HediffDef: VEF_ToxicBuildup.label 'toxic buildup'
+HediffDef: VEF_ToxicBuildup.description 'Toxins in the bloodstream. This can come from various sources, including environmental toxins, venomous bites, or poisoned weapons.\n\nAt high doses, toxic buildup is lethal. Even at low doses, it can generate cancers.\n\nContrary to base game toxic buildup, creatures who die with this toxic damage can be eaten.'
+HediffDef: VEF_ToxicBuildup.stages.initial-0.label 'initial'
+HediffDef: VEF_ToxicBuildup.stages.initial-1.label 'initial'
+HediffDef: VEF_ToxicBuildup.stages.minor.label 'minor'
+HediffDef: VEF_ToxicBuildup.stages.moderate.label 'moderate'
+HediffDef: VEF_ToxicBuildup.stages.serious.label 'serious'
+HediffDef: VEF_ToxicBuildup.stages.extreme.label 'extreme'
+HediffDef: VFEP_HypothermicSlowdown.label 'hypothermic slowdown'
+HediffDef: VFEP_HypothermicSlowdown.description 'Dangerously low core body temperature. Unless re-warmed, hypothermic slowdown gets worse and ends in death. Recovery is quick once the victim is re-warmed.'
+HediffDef: VFEP_HypothermicSlowdown.stages.minor-0.label 'minor'
+HediffDef: VFEP_HypothermicSlowdown.stages.minor-1.label 'minor'
+HediffDef: VFEP_HypothermicSlowdown.stages.moderate.label 'moderate'
+HediffDef: VFEP_HypothermicSlowdown.stages.serious.label 'serious'
+HediffDef: VFEP_HypothermicSlowdown.stages.extreme.label 'extreme'
+IncidentDef: VSE_Reinforcements.label 'reinforcements'
+JobDef: VFEA_UseAbilityUninterruptible.reportString 'Doing something.'
+JobDef: VFEA_UseAbility.reportString 'Doing something.'
+JobDef: VFEA_GotoTargetAndUseAbility.reportString 'Doing something.'
+JobDef: VFEA_StandAndFaceTarget.reportString 'standing.'
+JobDef: VEF_AnimalResource.reportString 'gathering animal resource from TargetA.'
+JobDef: VEF_DestroyItem.reportString 'destroying an item.'
+JobDef: VEF_LayExplodingEgg.reportString 'laying egg.'
+JobDef: VEF_IngestWeird.reportString 'consuming TargetA.'
+JobDef: VEF_AutoNutrition.reportString 'eating.'
+JobDef: IP_InsertFirstIngredient.reportString 'inserting ingredient.'
+JobDef: IP_InsertSecondIngredient.reportString 'inserting ingredient.'
+JobDef: IP_InsertThirdIngredient.reportString 'inserting ingredient.'
+JobDef: IP_RemoveProduct.reportString 'removing finished product.'
+JobDef: VFE_Mechanoids_RepairMachine.reportString 'rebuilding machine.'
+JobDef: VFE_Mechanoids_AttachTurret.reportString 'attaching turret.'
+JobDef: VFE_Mechanoids_Recharge.reportString 'recharging.'
+JobDef: VFEC_EquipShield.reportString 'equipping TargetA.'
+JobDef: VFEC_LeaveMap.reportString 'leaving.'
+JobDef: VEF_CustomizeItem.reportString 'customizing TargetA.'
+JobDef: KCSG_GoToPassage.reportString 'entering TargetA.'
+JobDef: VEF_UseDoorTeleporter.reportString 'using TargetA to teleport to TargetB'
+JobDef: PS_DrainFromMarkedStorage.reportString 'draining out of TargetA.'
+JobDef: PS_FillStorage.reportString 'filling TargetA.'
+JobDef: PS_PickUpProcessor.reportString 'picking up from TargetA.'
+JobDef: PS_BringToProcessor.reportString 'bringing TargetB to TargetA.'
+JobDef: BetterReload.reportString 'reloading TargetA.'
+JobDef: ReloadFromInventory.reportString 'reloading TargetA.'
+JobDef: Unload.reportString 'unloading TargetA.'
+KeyBindingDef: VFE_Dev_Restart.label 'restart game'
+MentalStateDef: VEF_XenophobicRage.label 'xenophobic rage'
+MentalStateDef: VEF_XenophobicRage.baseInspectLine 'Mental state: Xenophobic rage'
+MentalStateDef: VEF_XenophobicRage.beginLetter '{0} has flown into a xenophobic rage.\n\n[PAWN_pronoun] has decided to kill {1}.'
+MentalStateDef: VEF_XenophobicRage.recoveryMessage '{0} is no longer in a xenophobic rage.'
+NeedDef: VFE_Mechanoids_Power.label 'power'
+NeedDef: VFE_Mechanoids_Power.description 'Power represents the state of a machine's internal battery. If it gets too low, the machine will stop performing tasks and return to its station to recharge.'
+PawnRenderTreeDef: Humanlike.root.children.2.children.2.debugLabel 'Head wounds'
+PawnRenderTreeDef: Humanlike.root.children.2.children.5.debugLabel 'Status overlay'
+PawnRenderTreeDef: VEF_GraphicByTerrainRenderTree.root.children.0.children.3.debugLabel 'Carried thing'
+PawnRenderTreeDef: VEF_GraphicByStyleRenderTree.root.children.0.children.3.debugLabel 'Carried thing'
+QuestScriptDef: ThreatReward_Raid_Joiner.root.nodes.Delay-0.node.parms.customLetterLabel.value.slateRef '{BASELABEL} chasing [../joiner_nameDef]'
+QuestScriptDef: ThreatReward_Raid_Joiner.root.nodes.Delay-0.node.parms.customLetterText.value.slateRef '{BASETEXT}\n              \nThe [enemyFaction_pawnsPlural] have come to get [../joiner_nameDef].'
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.0 'subject->innovation's path' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.1 'subject_story->unveiled simple truths behind complex phenomena' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.2 'subject_story->simplified the intricate to make way for practical applications' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.3 'subject_story->harnessed basic principles to achieve remarkable feats' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.4 'subject_gerund->streamlining the essence of discovery' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.5 'subject->building blocks of progress' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.6 'subject_story->laid the groundwork for monumental leaps forward' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.7 'subject_story->connected dots across disciplines to reveal new insights' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.8 'subject_story->crafted the foundation upon which future innovations stand' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.9 'subject_gerund->laying down the keystones of advancement' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.10 'subject->seeds of tomorrow' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.11 'subject_story->planted ideas that would grow into transformative solutions' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.12 'subject_story->cultivated a garden of knowledge, ripe with potential' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.13 'subject_story->nurtured the roots of change with care and foresight' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.14 'subject_gerund->sowing the future with today’s discoveries' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.15 'subject->the ripple of curiosity' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.16 'subject_story->set forth waves of inquiry that echoed through time' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.17 'subject_story->dropped pebbles of innovation into the pond of knowledge' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.18 'subject_story->watched as one question led to another, expanding the circle of understanding' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.19 'subject_gerund->casting stones to create waves of progress' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.20 'subject->the alchemy of progress' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.21 'subject_story->merged disparate disciplines to unlock new realms of possibility' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.22 'subject_story->turned the impossible into the inevitable through sheer ingenuity' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.23 'subject_story->crafted solutions that reshaped the understanding of what's achievable' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.24 'subject_gerund->blending science and magic into the fabric of reality' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.25 'subject->the tapestry of discovery' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.26 'subject_story->wove together threads of knowledge from the four corners of the world' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.27 'subject_story->revealed patterns in the chaos, charting paths to untold innovations' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.28 'subject_story->embroidered the annals of history with tales of serendipitous breakthroughs' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.29 'subject_gerund->weaving the future from the loom of the present' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.30 'subject->the crucible of creation' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.31 'subject_story->fused raw elements into the building blocks of tomorrow' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.32 'subject_story->tempered the fires of creativity to forge unprecedented technologies' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.33 'subject_story->quenched the thirst for knowledge with the elixir of invention' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.34 'subject_gerund->molding the raw materials of today into the artifacts of the future' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.35 'subject->the beacon of enlightenment' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.36 'subject_story->illuminated the dark corners of ignorance, guiding the way forward' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.37 'subject_story->cast light on the unknown, making the unseen visible to curious minds' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.38 'subject_story->ignited the flames of curiosity, kindling a worldwide pursuit of understanding' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.39 'subject_gerund->lighting the torches of progress and knowledge' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.40 'subject->the frontier of knowledge' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.41 'subject_story->crossed new horizons in the pursuit of understanding' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.42 'subject_story->challenged the status quo with groundbreaking theories' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.43 'subject_story->merged ancient wisdom with modern technology for innovative solutions' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.44 'subject_gerund->pushing the boundaries of science and art' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.45 'subject->the essence of innovation' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.46 'subject_story->transformed everyday materials into extraordinary tools' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.47 'subject_story->paved the way for future generations with sustainable practices' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.48 'subject_story->harnessed the power of nature to fuel new advancements' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.49 'subject_gerund->fostering an ecosystem of creativity and progress' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.50 'subject->the architects of tomorrow' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.51 'subject_story->built the foundations for a utopia where technology serves all' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.52 'subject_story->envisioned a future where harmony between technology and nature thrives' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.53 'subject_story->crafted tools that empower humanity to reach its fullest potential' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.54 'subject_gerund->laying the keystones for future landscapes' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.55 'subject->exploratory leaps' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.56 'subject_story->stepped boldly into uncharted territories of knowledge' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.57 'subject_story->bridged the gap between the known and the unknown' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.58 'subject_story->ventured where curiosity dared to lead' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.59 'subject_gerund->embarking on journeys of discovery' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.60 'subject->the essence of ingenuity' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.61 'subject_story->transformed challenges into opportunities for growth' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.62 'subject_story->applied creative thinking to overcome traditional obstacles' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.63 'subject_story->crafted elegant solutions with a blend of art and science' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.64 'subject_gerund->unlocking potential through innovation' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.65 'subject->knowledge’s harvest' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.66 'subject_story->gathered insights as one reaps the fields at harvest' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.67 'subject_story->cultivated a bounty of understanding from the seeds of inquiry' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.68 'subject_story->shared the fruits of research with the world' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.69 'subject_gerund->reaping the rewards of relentless curiosity' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.70 'subject->the puzzle of progress' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.71 'subject_story->assembled the pieces of mystery to reveal the big picture' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.72 'subject_story->matched theory with practice to solve longstanding puzzles' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.73 'subject_story->uncovered hidden connections that unlocked new possibilities' (hint: this list allows full-list translation by using <li> nodes)
+RulePackDef: VEF_Description_Schematic_Defaults.rulePack.rulesStrings.74 'subject_gerund->piecing together the elements of advancement' (hint: this list allows full-list translation by using <li> nodes)
+ScenPartDef: VFEC_ForcedFactionGoodwill.label 'forced faction relations'
+ScenPartDef: VFEC_PlayerPawnsArriveMethodEdge.label 'pawn arrive method'
+ScenPartDef: VFEC_AddStartingStructure.label 'add custom structure to starting map'
+SitePartDef: KCSG_EnnemiesPresence.label 'enemies present'
+SitePartDef: KCSG_EnnemiesPresence.description 'Enemies are present in this place.'
+StatCategoryDef: VFE_EquippedStatFactors.label 'Factors when equipped'
+StatDef: WorkSpeedGlobal.parts.1.label 'Offset from mechanitor'
+StatDef: VEF_RangedCooldownFactor.label 'ranged cooldown factor'
+StatDef: VEF_RangedCooldownFactor.description 'The cooldown on ranged weapons of the wearer is multiplied by this value.'
+StatDef: VEF_VerbRangeFactor.label 'verb range factor'
+StatDef: VEF_VerbRangeFactor.description 'The range on weapons is multiplied by this value.'
+StatDef: VEF_VerbRangeFactor.labelForFullStatList 'verb range factor (people)'
+StatDef: VEF_VerbCooldownFactor.label 'verb cooldown factor'
+StatDef: VEF_VerbCooldownFactor.description 'The cooldown on weapons is multiplied by this value.'
+StatDef: VEF_VerbCooldownFactor.labelForFullStatList 'verb cooldown factor (people)'
+StatDef: VEF_EnergyShieldEnergyMaxOffset.label 'Shield max energy offset'
+StatDef: VEF_EnergyShieldEnergyMaxOffset.description 'Offset of the maximum shield energy that the user can boost through various means.'
+StatDef: VEF_EnergyShieldEnergyMaxFactor.label 'Shield max energy factor'
+StatDef: VEF_EnergyShieldEnergyMaxFactor.description 'Factor of the maximum shield energy that the user can boost through various means.'
+StatDef: VEF_EnergyShieldEnergyMaxApparel.label 'shield max energy'
+StatDef: VEF_EnergyShieldEnergyMaxApparel.description 'The maximum energy a shield generator can have at one time. More energy absorbs more damage.'
+StatDef: VEF_EnergyShieldRechargeRateApparel.label 'shield recharge rate'
+StatDef: VEF_EnergyShieldRechargeRateApparel.description 'The rate at which a shield gains energy as long as it is not broken.'
+StatDef: VEF_EnergyShieldRechargeRateApparel.formatString '{0}/s'
+StatDef: VEF_EnergyShieldRadiusApparel.label 'shield radius'
+StatDef: VEF_EnergyShieldRadiusApparel.description 'The area covered when the energy shield is active.'
+StatDef: VEF_EnergyShieldRadiusApparel.formatString '{0} c'
+StatDef: VEF_EnergyShieldEnergyMaxPawn.label 'shield max energy'
+StatDef: VEF_EnergyShieldEnergyMaxPawn.description 'The maximum energy a shield generator can have at one time. More energy absorbs more damage.'
+StatDef: VEF_EnergyShieldRechargeRatePawn.label 'shield recharge rate'
+StatDef: VEF_EnergyShieldRechargeRatePawn.description 'The rate at which a shield gains energy as long as it is not broken.'
+StatDef: VEF_EnergyShieldRechargeRatePawn.formatString '{0}/s'
+StatDef: VEF_EnergyShieldRadiusPawn.label 'shield radius'
+StatDef: VEF_EnergyShieldRadiusPawn.description 'The area covered when the energy shield is active.'
+StatDef: VEF_EnergyShieldRadiusPawn.formatString '{0} c'
+StatDef: VEF_MeleeAttackSpeedFactor.label 'melee attack speed factor'
+StatDef: VEF_MeleeAttackSpeedFactor.description 'A multiplier on melee attack speed.'
+StatDef: VEF_RangeAttackSpeedFactor.label 'range attack speed factor'
+StatDef: VEF_RangeAttackSpeedFactor.description 'A multiplier on range attack speed.'
+StatDef: VEF_MeleeAttackDamageFactor.label 'melee attack damage factor'
+StatDef: VEF_MeleeAttackDamageFactor.description 'A multiplier on melee attack damage.'
+StatDef: VEF_RangeAttackDamageFactor.label 'range attack damage factor'
+StatDef: VEF_RangeAttackDamageFactor.description 'A multiplier on range attack damage.'
+StatDef: VEF_FoodCapacityMultiplier.label 'body food capacity multiplier'
+StatDef: VEF_FoodCapacityMultiplier.description 'Increases the size of the pawn's hunger bar. This does not affect hunger'
+StatDef: VEF_GrowthPointMultiplier.label 'growth point multiplier'
+StatDef: VEF_GrowthPointMultiplier.description 'Increases the amount of growth points accumulated by children when learning'
+StatDef: VEF_BodySize_Offset.label 'body size offset'
+StatDef: VEF_BodySize_Offset.description 'Increases the size of the pawn relative to their current size'
+StatDef: VEF_BodySize_Multiplier.label 'body size multiplier'
+StatDef: VEF_BodySize_Multiplier.description 'Increases the size of the pawn by a multiple of their current size'
+StatDef: VEF_CosmeticBodySize_Offset.label 'cosmetic body size offset'
+StatDef: VEF_CosmeticBodySize_Offset.description 'Increases the size of the pawn relative to their current size'
+StatDef: VEF_CosmeticBodySize_Multiplier.label 'cosmetic body size multiplier'
+StatDef: VEF_CosmeticBodySize_Multiplier.description 'Increases the size of the pawn by a multiple of their current size'
+StatDef: VEF_HeadSize_Cosmetic.label 'head size multiplier'
+StatDef: VEF_PawnRenderPosOffset.label 'pawn render offset'
+StatDef: VEF_PawnRenderPosOffset.description 'Modifies the pawn's rendered position in y-axis.'
+StatDef: VEF_MassCarryCapacity.label 'Mass carry capacity'
+StatDef: VEF_MassCarryCapacity.description 'Total mass carrying capacity of the pawn in caravans.'
+StatDef: VEF_MassCarryCapacity.formatString '{0} kg'
+StatDef: VEF_MassCarryCapacity.formatStringUnfinalized '{0} kg'
+ThingCategoryDef: VFEC_Shields.label 'shields'
+ThingDef: VFEA_AbilityFlyer.label 'flying'
+ThingDef: VFEA_AbilityFlyer_Charge.label 'flying'
+ThingDef: KCSG_PowerConduit.label 'power conduit'
+ThingDef: KCSG_PowerConduit.description 'A burried bundle of electrical cables for moving power around.'
+ThingDef: Grimworld_FlintlockSmoke.label 'Mote'
+ThingDef: KCSG_LongMote_DustPuff.label 'Mote'
+ThingDef: Mote_Firetrail.label 'Mote'
+ThingDef: Mote_Smoketrail.label 'Mote'
+ThingDef: Mote_FTSmoketrail.label 'Mote'
+ThingDef: Mote_GreenSmoketrail.label 'Mote'
+ThingDef: VEF_OutpostDeliverySpot.label 'outpost delivery spot'
+ThingDef: VEF_OutpostDeliverySpot.description 'Designates a spot for items from outposts to be delivered to.'
+ThinkTreeDef: VEF_AnimalHarvester.thinkRoot.subNodes.1.subNodes.0.subNodes.0.subNodes.0.subNodes.0.crawlingReportStringOverride 'Arrastrándose a un lugar seguro.'
+ThinkTreeDef: VEF_AnimalHarvester.thinkRoot.subNodes.1.subNodes.0.subNodes.0.subNodes.0.subNodes.1.subNodes.0.crawlingReportStringOverride 'Arrastrándose a la cama.'
+ThinkTreeDef: VEF_AnimalWeirdEater.thinkRoot.subNodes.1.subNodes.0.subNodes.0.subNodes.0.subNodes.0.crawlingReportStringOverride 'Arrastrándose a un lugar seguro.'
+ThinkTreeDef: VEF_AnimalWeirdEater.thinkRoot.subNodes.1.subNodes.0.subNodes.0.subNodes.0.subNodes.1.subNodes.0.crawlingReportStringOverride 'Arrastrándose a la cama.'
+ThinkTreeDef: VFE_Mechanoids_Machine.thinkRoot.subNodes.0.subNodes.0.subNodes.0.subNodes.0.subNodes.0.crawlingReportStringOverride 'Arrastrándose a un lugar seguro.'
+ThinkTreeDef: VFE_Mechanoids_Machine.thinkRoot.subNodes.0.subNodes.0.subNodes.0.subNodes.0.subNodes.1.subNodes.0.crawlingReportStringOverride 'Arrastrándose a la cama.'
+ThinkTreeDef: VFE_Mechanoids_MachineWandering.thinkRoot.subNodes.0.subNodes.0.subNodes.0.subNodes.0.subNodes.0.crawlingReportStringOverride 'Arrastrándose a un lugar seguro.'
+ThinkTreeDef: VFE_Mechanoids_MachineWandering.thinkRoot.subNodes.0.subNodes.0.subNodes.0.subNodes.0.subNodes.1.subNodes.0.crawlingReportStringOverride 'Arrastrándose a la cama.'
+ThinkTreeDef: VFE_Mechanoids_ViolentMachine.thinkRoot.subNodes.0.subNodes.0.subNodes.0.subNodes.0.subNodes.0.crawlingReportStringOverride 'Arrastrándose a un lugar seguro.'
+ThinkTreeDef: VFE_Mechanoids_ViolentMachine.thinkRoot.subNodes.0.subNodes.0.subNodes.0.subNodes.0.subNodes.1.subNodes.0.crawlingReportStringOverride 'Arrastrándose a la cama.'
+ThinkTreeDef: VFE_Mechanoids_Raider.thinkRoot.subNodes.0.subNodes.0.subNodes.0.subNodes.0.subNodes.0.crawlingReportStringOverride 'Arrastrándose a un lugar seguro.'
+ThinkTreeDef: VFE_Mechanoids_Raider.thinkRoot.subNodes.0.subNodes.0.subNodes.0.subNodes.0.subNodes.1.subNodes.0.crawlingReportStringOverride 'Arrastrándose a la cama.'
+ThinkTreeDef: VFE_Mechanoids_Machine_Riddable.thinkRoot.subNodes.0.subNodes.0.subNodes.0.subNodes.0.subNodes.0.crawlingReportStringOverride 'Arrastrándose a un lugar seguro.'
+ThinkTreeDef: VFE_Mechanoids_Machine_Riddable.thinkRoot.subNodes.0.subNodes.0.subNodes.0.subNodes.0.subNodes.1.subNodes.0.crawlingReportStringOverride 'Arrastrándose a la cama.'
+WorkGiverDef: VEF_AnimalResource.label 'gather animal resource'
+WorkGiverDef: VEF_AnimalResource.gerund 'gathering animal resource from'
+WorkGiverDef: VEF_AnimalResource.verb 'gather animal resource from'
+WorkGiverDef: VEF_DestroyItems.label 'destroy items'
+WorkGiverDef: VEF_DestroyItems.gerund 'destroying items'
+WorkGiverDef: VEF_DestroyItems.verb 'destroy items'
+WorkGiverDef: VEF_Art_ConstructFinishFrames.label 'construct placed frames'
+WorkGiverDef: VEF_Art_ConstructFinishFrames.gerund 'working on'
+WorkGiverDef: VEF_Art_ConstructFinishFrames.verb 'work on'
+WorkGiverDef: VEF_Art_ConstructDeliverResourcesToFrames.label 'deliver resources to frames'
+WorkGiverDef: VEF_Art_ConstructDeliverResourcesToFrames.gerund 'working on'
+WorkGiverDef: VEF_Art_ConstructDeliverResourcesToFrames.verb 'work on'
+WorkGiverDef: VEF_Art_ConstructDeliverResourcesToBlueprints.label 'deliver resources to blueprints'
+WorkGiverDef: VEF_Art_ConstructDeliverResourcesToBlueprints.gerund 'working on'
+WorkGiverDef: VEF_Art_ConstructDeliverResourcesToBlueprints.verb 'work on'
+WorkGiverDef: IP_InsertFirstIngredient.label 'bringing ingredient'
+WorkGiverDef: IP_InsertFirstIngredient.gerund 'bringing ingredient to'
+WorkGiverDef: IP_InsertFirstIngredient.verb 'bring ingredient to'
+WorkGiverDef: IP_InsertSecondIngredient.label 'bringing ingredient'
+WorkGiverDef: IP_InsertSecondIngredient.gerund 'bringing ingredient to'
+WorkGiverDef: IP_InsertSecondIngredient.verb 'bring ingredient to'
+WorkGiverDef: IP_InsertThirdIngredient.label 'bringing ingredient'
+WorkGiverDef: IP_InsertThirdIngredient.gerund 'bringing ingredient to'
+WorkGiverDef: IP_InsertThirdIngredient.verb 'bring ingredient to'
+WorkGiverDef: IP_RemoveProduct.label 'removing finished product'
+WorkGiverDef: IP_RemoveProduct.gerund 'removing finished product from'
+WorkGiverDef: IP_RemoveProduct.verb 'remove finished product from'
+WorkGiverDef: PS_DrainOutOfStorage.label 'drain out of storage'
+WorkGiverDef: PS_DrainOutOfStorage.gerund 'draining out of storage'
+WorkGiverDef: PS_DrainOutOfStorage.verb 'drain out of storage'
+WorkGiverDef: PS_FillStorage.label 'fill storage'
+WorkGiverDef: PS_FillStorage.gerund 'filling storage'
+WorkGiverDef: PS_FillStorage.verb 'fill storage'
+WorkGiverDef: PS_PickUpProcessor.label 'pick up result from processor'
+WorkGiverDef: PS_PickUpProcessor.gerund 'picking up result'
+WorkGiverDef: PS_PickUpProcessor.verb 'pick up result'
+WorkGiverDef: PS_BringToProcessor.label 'bring ingredient to processor'
+WorkGiverDef: PS_BringToProcessor.gerund 'bringing ingredient'
+WorkGiverDef: PS_BringToProcessor.verb 'bring ingredient'
+WorldObjectDef: KCSG_UndergroundRoom.label 'underground room'
+WorldObjectDef: KCSG_UndergroundRoom.description 'An underground room.'
+
+========== Unnecessary def-injected translations (marked as NoTranslate) (0) ==========
+
+========== Def-injected translations using old, renamed defs (fixed automatically but can break in the next RimWorld version) (0) =========
+
+========== Argument count mismatches (may or may not be incorrect) (29) ==========
+ColonistsIdle (Alerts.xml:156)
+  - '{0} colonists idle'
+  - '{replace: ^{0} colonos ociosos; "^1 colonos ociosos"-"1 colono ocioso"; "^"-""}'
+PatientsAwaitingMedicalOperation (Alerts.xml:178)
+  - '{0} patients await medical operation'
+  - '{replace: ^{0} pacientes esperan; "^1 pacientes esperan"-"1 paciente espera"; "^"-""} operación médica'
+NeedWarmClothesDesc1 (Alerts.xml:217)
+  - 'At least {0} of your colonists will lack warm clothes when the cold season comes.'
+  - 'Al menos {replace: ^{0} colonos necesitarán ropa; "^1 colonos necesitarán ropas"-"1 colono necesitará ropa"; "^"-""} de abrigo cuando llegue la estación fría.'
+AlertMinifiedTreeAboutToDie (Alerts.xml:328)
+  - '{0} trees dying'
+  - '{replace: ^{0} árboles muriendo; "^1 árboles muriendo"-"1 árbol muriendo"; "^"-""}'
+AlertMinifiedTreeAboutToDieDesc (Alerts.xml:330)
+  - '{0} extracted trees are going to die is less than a day. This will make some colonists unhappy because of their beliefs.\n\nYou can prevent this by replanting these trees.'
+  - '{replace: ^{0} árboles extraídos van; "^1 árboles extraídos van"-"1 árbol extraído va"; "^"-""} a morir en menos de un día. Esto hará que algunos colonos estén descontentos por sus creencias.\n\nPuedes evitarlo replantando nuevamente.'
+FullDate (Dates.xml:14)
+  - '{0} of {1}, {2}'
+  - '{replace: {0}; ".º"-" "} de {1} de {2}'
+DateReadout (Dates.xml:20)
+  - '{0} of {1}, {2}'
+  - '{replace: {0}; ".º"-" "} de {1} de {2}'
+FactionGreetingWarm (Dialog_Trees.xml:11)
+  - '{0} greets {NEGOTIATOR_labelShort} warmly and asks what {LEADER_pronoun} can do to help you.'
+  - '{0} saluda a {NEGOTIATOR_labelShort} y pregunta qué puede hacer para ayudarte.'
+TransferEntity (FloatMenu.xml:221)
+  - 'Transfer {0_label}'
+  - 'Trasladar {replace: a {0_definite}; "a el "-"al "}'
+SingleVisitorArrivesTraderInfo (Incidents.xml:85)
+  - '{PAWN_pronoun} seems to have a few items to trade.'
+  - 'Parece tener algunos objetos para comerciar.'
+MentalStateReason_BondedHumanDeath (Letters.xml:158)
+  - 'This happened because of {0_definite}'s death.'
+  - 'Esto sucedió debido a la muerte {replace: de {0_definite}; "de el "-"del "}.'
+MessageNoHandlerSkilledEnough (Messages.xml:199)
+  - 'No handler capable of taming {ANIMAL_kindBase} (requires level {1} in {2}, best capable handler {HANDLER_labelShort} has {4}).'
+  - 'Ningún adiestrador puede domesticar {replace: a {ANIMAL_kindBaseDef}; "a el "-"al "} (requiere nivel {1} en {2} y el mejor adiestrador es {HANDLER_labelShort} con {4}).'
+RenounceTitleWillLoosePermits (Misc_Gameplay.xml:120)
+  - '{PAWN_pronoun} will lose these permissions'
+  - 'Perderá estos permisos'
+RenounceTitleWillKeepPsylinkLevels (Misc_Gameplay.xml:124)
+  - '{PAWN_pronoun} will keep all {PAWN_possessive} psylink levels and psycasts.'
+  - 'Mantendrá todos sus niveles de psicoenlace y psicoemisiones.'
+CreatureWildness (Misc_Gameplay.xml:398)
+  - '{0} wildness'
+  - 'salvajismo'
+CreatureTrainability (Misc_Gameplay.xml:400)
+  - '{0} trainability'
+  - 'adiestrabilidad'
+FilthLabelWithSource (Misc_Gameplay.xml:444)
+  - '{0} of {1} x{2}'
+  - '{0} de {replace: {1}; "un "-""; "una "-""} x{2}'
+NumWoundsTended (Dialogs_Various.xml:226)
+  - '{0} wounds tended'
+  - '{replace: ^{0} heridas atendidas; "^1 heridas atendidas"-"1 herida atendida"; "^"-""}'
+PigFactionGreetingWarm (Dialogs_Various.xml:311)
+  - 'Oinking enthusiastically, {0} greets {NEGOTIATOR_labelShort} and asks what {LEADER_pronoun} can do to help you.'
+  - 'Expresa unos ¡oinc, oinc! con entusiasmo, {0} saluda a {NEGOTIATOR_labelShort} y pregunta qué puede hacer para ayudarte.'
+YttakinFactionGreetingWarm (Dialogs_Various.xml:322)
+  - '{0} bellows a friendly greeting and asks what {LEADER_pronoun} can do to help you.'
+  - '{0} vocifera un saludo amistoso y pregunta qué puede hacer para ayudarte.'
+NumPassionsFromOptions (Dialogs_Various.xml:344)
+  - 'Choose {0} passions from {1} options.'
+  - 'Escoge {replace: ^{0} pasiones; "^1 pasiones"-"1 pasión"; "^"-""} entre {1} opciones.'
+NumTraitsFromOptions (Dialogs_Various.xml:346)
+  - 'Choose {0} trait from {1} options.'
+  - 'Escoge {replace: ^{0} rasgos; "^1 rasgos"-"1 rasgo"; "^"-""} entre {1} opciones.'
+AddictionChanceFactor (Dialog_StatsReports.xml:91)
+  - '{0_label} addiction chance factor'
+  - 'Probabilidad de adicción {replace: a {0_definite}; "a el "-"al "}'
+AddictionImmune (Dialog_StatsReports.xml:97)
+  - 'Immune to {0_label} addiction.'
+  - 'Inmune a la adicción {replace: a {0_definite}; "a el "-"al "}.'
+GeneToleranceBuildupImmune (Dialog_StatsReports.xml:135)
+  - 'Carriers cannot build a tolerance to {0_label}.'
+  - 'Los portadores no pueden crear una tolerancia {replace: a {0_definite}; "a el "-"al "}.'
+GeneToleranceBuildupFactor (Dialog_StatsReports.xml:137)
+  - 'Carriers build a tolerance to {0_label} {1} as quickly.'
+  - 'Los portadores construyen una tolerancia {replace: a {0_definite}; "a el "-"al "} {1} con la misma rapidez.'
+LetterMechanitorCasketOpened (Letters.xml:40)
+  - 'You have found the corpse of an ancient mechanitor!\n\nExtract {PAWN_possessive} mechlink by selecting a colonist and right-clicking the corpse.'
+  - 'Has encontrado el cadáver de un antiguo mecanizador!\n\nExtrae su mecaenlace seleccionando un colono y haciendo clic con el botón derecho en el cadáver.'
+LetterTextDeathrest (Letters.xml:186)
+  - 'Instead, {PAWN_pronoun} has fallen into a deathrest.'
+  - 'En cambio, ha caído en un mortisueño.'
+LetterTextRegenerationComa (Letters.xml:188)
+  - 'Instead, {PAWN_pronoun} has fallen into a regeneration coma.'
+  - 'En cambio, ha caído en un coma regenerativo.'
+
+========== Unnecessary keyed translations (will never be used) (0) ==========
+
+========== Keyed translations matching English (maybe ok) (100) ==========
+Credit_MusicAndSound 'Audio' (Credits.xml:14)
+Credits_TitleMods 'Mods' (Credits.xml:26)
+Credits_Editor 'Editor' (Credits.xml:41)
+ShortDate '{0} {1} {2}' (Dates.xml:16)
+MonthYearDate '{0}, {1}' (Dates.xml:18)
+Color 'Color' (Designators.xml:224)
+OK 'OK' (Dialogs_Various.xml:11)
+MapStartSeasonDefault 'Auto' (Dialogs_Various.xml:271)
+IncompatibleLower 'incompatible' (Dialogs_Various.xml:299)
+TargetAnimal 'animal' (Dialogs_Various.xml:584)
+CantGrazeBecauseOfBiome '({0})' (Dialogs_Various.xml:854)
+AutoSlaugtherHeaderColLabel 'Animal' (Dialogs_Various.xml:1267)
+AutoSlaugtherHeaderColTotal 'Total' (Dialogs_Various.xml:1273)
+StatsReport_Material 'Material' (Dialog_StatsReports.xml:24)
+StatsReport_Inspiration '{0}' (Dialog_StatsReports.xml:116)
+Stat_Thing_ReloadMaxCharges_Name '{CHARGENOUN_plural}' (Dialog_StatsReports.xml:342)
+StoragePriorityNormal 'normal' (Enums.xml:30)
+QualityCategory_Normal 'normal' (Enums.xml:68)
+ContentSource_SteamWorkshop 'Steam Workshop' (Enums.xml:148)
+TechLevel_Animal 'animal' (Enums.xml:180)
+TechLevel_Medieval 'medieval' (Enums.xml:184)
+TechLevel_Industrial 'industrial' (Enums.xml:186)
+TechLevel_Ultra 'ultra' (Enums.xml:190)
+Fahrenheit 'Fahrenheit' (Enums.xml:264)
+Kelvin 'Kelvin' (Enums.xml:266)
+Direction8Way_North_Short 'N' (Enums.xml:270)
+Direction8Way_NorthEast_Short 'NE' (Enums.xml:272)
+Direction8Way_East_Short 'E' (Enums.xml:274)
+Direction8Way_SouthEast_Short 'SE' (Enums.xml:276)
+Direction8Way_South_Short 'S' (Enums.xml:278)
+DietCategory_NeverEats_Short '-' (Enums.xml:300)
+DietCategory_Herbivorous_Short 'H' (Enums.xml:302)
+DietCategory_Dendrovorous_Short 'D' (Enums.xml:304)
+DietCategory_Ovivorous_Short 'Ov' (Enums.xml:306)
+DietCategory_Omnivorous_Short 'O' (Enums.xml:308)
+DietCategory_Carnivorous_Short 'C' (Enums.xml:310)
+DrugCategory_Social 'social' (Enums.xml:370)
+TabSocial 'Social' (ITabs.xml:38)
+GoodCondition 'OK' (ITabs.xml:247)
+Neutral 'Neutral' (Letters.xml:44)
+NeutralLower 'neutral' (Letters.xml:46)
+LetterHediffFromRandomHediffGiverLabel '{PAWN_labelShort}: {1}' (Letters.xml:134)
+LetterLabelShortCircuit 'Zzztt...' (Letters.xml:239)
+EmergencyWorkMarker 'E' (MainTabs.xml:22)
+Rival 'Rival' (MainTabs.xml:126)
+Tutorial 'Tutorial' (Menus_Main.xml:6)
+Mod 'Mod' (Menus_Main.xml:20)
+Mods 'Mods' (Menus_Main.xml:22)
+PlanetRainfall_Normal 'Normal' (Menus_Main.xml:96)
+PlanetTemperature_Normal 'Normal' (Menus_Main.xml:102)
+PlanetPopulation_Normal 'Normal' (Menus_Main.xml:108)
+FromWorkshop 'Workshop' (Menus_Main.xml:206)
+WorkshopId 'Workshop ID' (Menus_Main.xml:232)
+ModPackageId 'ID' (Menus_Main.xml:246)
+ScenariosSteamWorkshop 'Steam Workshop' (Menus_Main.xml:302)
+Incompatible 'Incompatible' (Menus_Main.xml:326)
+DifficultyGeneralSection 'General' (Menus_Main.xml:435)
+DifficultyIdeologySection 'Ideology' (Menus_Main.xml:524)
+Antialiasing 'Anti-aliasing' (Menu_Options.xml:28)
+No 'No' (Misc.xml:38)
+min 'min' (Misc.xml:48)
+NoUppercase 'NO' (Misc.xml:76)
+kg 'kg' (Misc.xml:78)
+Etc 'etc' (Misc.xml:90)
+BabyTalk 'ba,bah,boo,buh,ga,gah,goo,nyah,na,nah,noo,woo,wah,wuh,ma,mah' (Misc.xml:161)
+FertShort 'fert.' (Misc_Gameplay.xml:42)
+CaravanColonistsCount '{0} {1}' (Misc_Gameplay.xml:214)
+CaravanAnimal '1 animal' (Misc_Gameplay.xml:216)
+KnownSiteThreatEnemyCountAppend '{0} {1}' (Misc_Gameplay.xml:338)
+FilthLabel '{0} x{1}' (Misc_Gameplay.xml:442)
+Hostiles 'Hostiles' (Misc_Gameplay.xml:578)
+PawnMainDescLifestageWrap '{2_lifeStageAdjective} {0}' (Misc_Gameplay.xml:983)
+Mood_Neutral 'neutral' (Misc_Gameplay.xml:1401)
+PawnTooltipWithDescAndPrimaryEquip '{0} ({1})\n{2}\n{3}' (Misc_Gameplay.xml:1597)
+PawnTooltipWithDescNoPrimaryEquip '{0} ({1})\n{2}' (Misc_Gameplay.xml:1599)
+PawnTooltipWithPrimaryEquipNoDesc '{0}\n{1}\n{2}' (Misc_Gameplay.xml:1601)
+PawnTooltipNoDescNoPrimaryEquip '{0}\n{1}' (Misc_Gameplay.xml:1603)
+Ritual 'ritual' (Misc_Gameplay.xml:1736)
+Wiki 'Wiki' (PlayInterface.xml:5)
+PawnCount '{COUNT} {KINDLABEL}' (ScenParts.xml:56)
+LetterDay 'd' (Time.xml:5)
+LetterHour 'h' (Time.xml:7)
+LetterMinute 'm' (Time.xml:9)
+LetterSecond 's' (Time.xml:11)
+AM 'AM' (Time.xml:16)
+PM 'PM' (Time.xml:18)
+QuadrumSeptober_Short 'Sep' (Time.xml:54)
+TabCaravanSocial 'Social' (WITabs.xml:12)
+Xenogenes 'xenogenes' (Dialogs_Various.xml:128)
+GenesConflictDesc '{FIRST_label}, {SECOND_label}' (Dialogs_Various.xml:198)
+TabGenes 'Genes' (ITabs.xml:14)
+FactorForGenes 'Genes' (ITabs.xml:131)
+NoReservableBossgroupCaller 'No reservable {0}' (Misc_Gameplay.xml:105)
+Aptitudes 'aptitudes' (Misc_Gameplay.xml:205)
+AptitudePlural 'aptitudes' (Misc_Gameplay.xml:207)
+Total 'total' (Misc_Gameplay.xml:211)
+PregnancyApproach_Normal 'normal' (Misc_Gameplay.xml:233)
+Genes 'genes' (Misc_Gameplay.xml:259)
+ContainedGenesDesc 'Genes' (Misc_Gameplay.xml:355)
+DisabledOption '{0} ({1})' (Misc_Gameplay.xml:721)
+
+========== Backstories translation using obsolete format (def injection is now enabled for backstories) (0) ==========
