@@ -1,11 +1,11 @@
 import { KeyedData } from './../types/KeyedData';
 import { DefinjectedData } from './../types/DefInjectedData';
-import { dialog, ipcMain } from 'electron';
+import { BrowserWindow, dialog, ipcMain } from 'electron';
 
 import { ipcNames } from '../types/ipcNames';
 import { outputTranslate, readFileTranslate } from './helpers';
 
-export const ipConnection = () => {
+export const ipConnection = (app: Electron.App, win: BrowserWindow) => {
 
     ipcMain.handle("read-file-translate" as ipcNames, async(e, args)=>{
         const { canceled, filePaths } = await dialog.showOpenDialog({ properties: ["openFile"] });
@@ -24,4 +24,20 @@ export const ipConnection = () => {
         });
     })
 
+
+
+
+    // APPLICATION CONTROL WINDOW
+    ipcMain.handle("app-close" as ipcNames, async(e, args)=>{
+        app.quit()
+    })
+
+    ipcMain.handle("app-maximize" as ipcNames, async(e, args)=>{
+        if(win.isMaximized()) { win.unmaximize() } 
+        else { win.maximize() }
+    })
+
+    ipcMain.handle("app-minimize" as ipcNames, async(e, args)=>{
+        win.minimize()
+    })
 }

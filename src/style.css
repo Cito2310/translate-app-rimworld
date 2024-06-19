@@ -2,8 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+
+body { overflow: hidden; }
+
 @layer utilities {
     .transition-base {
         transition: all 100ms linear
+    }
+
+    .draggable {
+        -webkit-app-region: drag;
+    }
+
+    .not-draggable {
+        -webkit-app-region: no-drag;
     }
 }

@@ -11,7 +11,7 @@ export const SectionTranslate = ({ control, type }: props) => {
     const { defInjected, keyed } = useAppSelector(state => state.dataTranslate.parsedData);
 
     return (
-        <section>
+        <section className="overflow-auto">
             <h2 className="font-semibold text-2xl px-2">{type}</h2>
 
             <ul>

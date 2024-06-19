@@ -17,7 +17,7 @@ export const TopBar = ({
     const onSetBase = async() =>{ await dispatch(startTranslateFile("base")); resetPrefix() };
 
     return (
-        <div className="flex bg-slate-500 px-4 py-2 justify-between fixed w-full">
+        <div className="flex bg-slate-500 px-4 py-2 justify-between ">
             <div className="flex gap-2">
                 <TopButton
                     isLoad={ existExclude } 

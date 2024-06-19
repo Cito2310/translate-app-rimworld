@@ -1,5 +1,6 @@
 import { useSetData, useControlTranslate } from "./hooks";
 import { SectionTranslate, TopBar } from "./components";
+import { TitleBar } from "./TitleBar/TitleBar";
 
 
 function App() {
@@ -9,15 +10,18 @@ function App() {
     const { control, onClickGenerateTranslate } = useControlTranslate();
 
     return (
-        <div className="pb-6">
+        <div>
+            <TitleBar />
             <TopBar 
                 onClickGenerateTranslate={ onClickGenerateTranslate }
             />
+            <div className="pb-6 h-screen overflow-auto">
 
-            <div className="mx-4 pt-14">
-                <SectionTranslate control={control} type="defInjected" />
+                <div className="mx-4 pt-14">
+                    <SectionTranslate control={control} type="defInjected" />
 
-                <SectionTranslate control={control} type="keyed" />
+                    <SectionTranslate control={control} type="keyed" />
+                </div>
             </div>
         </div>
     );

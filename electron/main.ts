@@ -3,8 +3,10 @@ import * as path from 'path';
 
 import { ipConnection } from './ipcConnection';
 
+let win: BrowserWindow;
+
 function createWindow() {
-  const win = new BrowserWindow({
+  win = new BrowserWindow({
     width: 800,
     height: 600,
     show: false,
@@ -12,10 +14,11 @@ function createWindow() {
       // contextIsolation: false,
       preload: path.join(__dirname, 'preload.js')
     },
-    icon: "icon.ico"
+    icon: "icon.ico",
+    frame: false,
   })
 
-  win.maximize();
+//   win.maximize();
   win.show();
 
   if (app.isPackaged) {
@@ -24,7 +27,7 @@ function createWindow() {
   } else {
     win.loadURL('http://localhost:3000/index.html');
 
-    // win.webContents.openDevTools();
+    win.webContents.openDevTools();
   }
 }
 
@@ -43,5 +46,5 @@ app.whenReady().then(() => {
     }
   });
 
-  ipConnection();
+  ipConnection(app, win);
 });
