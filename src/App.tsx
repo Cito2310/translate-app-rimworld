@@ -12,9 +12,9 @@ function App() {
     return (
         <div>
             <TitleBar />
-            <TopBar 
-                onClickGenerateTranslate={ onClickGenerateTranslate }
-            />
+            {/* <TopBar  */}
+                {/* onClickGenerateTranslate={ onClickGenerateTranslate } */}
+            {/* /> */}
             <div className="pb-6 h-screen overflow-auto">
 
                 <div className="mx-4 pt-14">

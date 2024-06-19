@@ -1,4 +1,4 @@
-import { ButtonTitleBar } from "./components/ButtonTitleBar"
+import { MenuButton } from "./components/MenuButton"
 import { ButtonWindow } from "./components/ButtonWindow"
 import { InputSearch } from "./components/InputSearch"
 import { useTitleBar } from "./hooks/useTitleBar"
@@ -10,7 +10,7 @@ export const TitleBar = () => {
         <nav className="w-screen h-[34px] draggable flex justify-between bg-[#161616] text-[#dddddd]">
             {/* LEFT */}    
             <div className="basis-[0] flex-grow">
-                <ButtonTitleBar onClick={()=>console.log("TODO")} label="Menu" />
+                <MenuButton handle={()=>console.log("TODO")} />
             </div>
 
             {/* CENTER */}
