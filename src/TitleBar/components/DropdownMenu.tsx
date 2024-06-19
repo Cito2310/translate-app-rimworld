@@ -1,15 +1,6 @@
 import { DropdownOption } from "./DropdownOption"
+import { DropdownSection } from "./DropdownSection"
 import { DropdownSeparate } from "./DropdownSeparate"
-
-interface propsDropdownSection {
-    children: JSX.Element | JSX.Element[]
-}
-
-const DropdownSection = ({ children }: propsDropdownSection) => (
-    <div className="flex flex-col p-[5px]">
-        {children}
-    </div>
-)
 
 export const DropdownMenu = () => {
     return (
