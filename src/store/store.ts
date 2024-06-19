@@ -1,11 +1,13 @@
 import { useDispatch, TypedUseSelectorHook, useSelector } from 'react-redux';
 import { configureStore } from "@reduxjs/toolkit";
-import { dataTranslateSlice } from './product/dataTranslateSlice';
+import { dataTranslateSlice } from './product';
+import { searchSlice } from './search';
 
 
 export const store = configureStore({
     reducer: {
         dataTranslate: dataTranslateSlice.reducer,
+        search: searchSlice.reducer,
     }
 })
 
