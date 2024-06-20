@@ -14,7 +14,7 @@ function App() {
         <div className="h-screen flex flex-col">
             <TitleBar />
 
-            <SectTranslate />
+            <SectTranslate control={control} />
             {/* <TopBar 
                  onClickGenerateTranslate={ onClickGenerateTranslate }
              /> */}
