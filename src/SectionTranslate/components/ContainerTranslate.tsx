@@ -1,3 +1,5 @@
+import { useAutosizeTextArea } from "../hooks/useAutosizeTextArea";
+
 interface props {
     value: string;
     original: string;
@@ -5,12 +7,18 @@ interface props {
 }
 
 export const ContainerTranslate = ({ original, value, name }: props) => {
+    const { ref, rest, textAreaRef } = useAutosizeTextArea( "value", value )
+
     return (
-        <div>
-            <div className="flex pl-9 gap-3">
-                <h4>{name}:</h4>
-                <textarea className="outline-none w-[100%] rounded px-1.5 py-.5 bg-[#363636]" value={value} />
-            </div>
+        <div className="flex pl-9 gap-2">
+            <h4>{name}:</h4>
+
+            <textarea {...rest} 
+            // @ts-ignore
+                ref={(e) => {ref(e); textAreaRef.current = e}}  
+                name="value" rows={1} 
+                className="outline-none w-[100%] rounded px-1.5 py-.5 bg-[#363636]"
+            />
         </div>
     )
 }

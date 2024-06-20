@@ -20,7 +20,9 @@ export const SectionDefInjected = ({ data }: props) => {
                     <TextTypeDef text={typeDef.name}/>
                     { typeDef.itemsDefs.map( itemDef => <div>
                         <TextItemDef text={itemDef.name} />
-                        { itemDef.parts.map( part => <ContainerTranslate name={part} original="This is the original text" value="Este es el texto a traducir" /> ) }
+                        <div className="flex flex-col gap-2">
+                            { itemDef.parts.map( part => <ContainerTranslate name={part} original="This is the original text" value="Este es el texto a traducir" /> ) }
+                        </div>
                     </div> ) }
                 </div> ) }
             </>

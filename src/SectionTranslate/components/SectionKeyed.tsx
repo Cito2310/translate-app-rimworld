@@ -12,7 +12,9 @@ export const SectionKeyed = ({data}: props) => {
     <>
         {data.Keyed.length && <>
             <TextMain text="Keyed" />
-            { data.Keyed.map(({ name, original, text }) => <ContainerTranslate name={name} original={original} value={text} /> ) }
+            <div className="flex flex-col gap-2">
+                { data.Keyed.map(({ name, original, text }) => <ContainerTranslate name={name} original={original} value={text} /> ) }
+            </div>
         </>}
     </>
   )
