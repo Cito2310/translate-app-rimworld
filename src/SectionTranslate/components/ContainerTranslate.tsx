@@ -7,9 +7,10 @@ interface props {
     name: string;
     control: Control<FieldValues, any>;
     path: string;
+    className?: string;
 }
 
-export const ContainerTranslate = ({ original, value, name, control, path }: props) => {
+export const ContainerTranslate = ({ original, value, name, control, path, className }: props) => {
     const { ref, rest, textAreaRef } = useAutosizeTextArea( "value", value )
 
     return (
@@ -18,7 +19,7 @@ export const ContainerTranslate = ({ original, value, name, control, path }: pro
             control={ control }
             defaultValue={ value }
             render={({ field }) => 
-                <div className="flex pl-9 gap-2">
+                <div className={`flex pl-9 gap-2 ${className}`}>
                     <h4>{name}:</h4>
 
                     <textarea {...field} 

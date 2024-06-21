@@ -19,7 +19,7 @@ export const useControlTranslate = () => {
     }
 
 
-    // TOO MANY LAG - Razon desconocida
+    // TOO MANY LAG - Razon: Al guardar en el localStorage provoca una re-renderización de todo los elementos provocando el gran lag, esto se pudo evitar con la virtualización con react-virtuoso
     useEffect(() => {
         const { defInjected: defInjectedForm, keyed: keyedForm } = getValues();
         if ( defInjectedForm || keyedForm ) {

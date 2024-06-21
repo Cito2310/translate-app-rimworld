@@ -1,6 +1,6 @@
 import { DefinjectedData } from "../../../types/DefInjectedData"
 
-interface TypeDef {
+export interface TypeDef {
     name: string;
     itemsDefs: ItemDef[]
 }
