@@ -3,6 +3,7 @@ import { DefinjectedData } from "../../../types/DefInjectedData"
 import { KeyedData } from "../../../types/KeyedData"
 import { ContainerTranslate } from "./ContainerTranslate"
 import { TextMain } from "./TextsForTranslate"
+import { replaceForForm } from "../../helpers";
 
 interface props {
     data: {keyed: KeyedData[], defInjected: DefinjectedData[]};
@@ -18,7 +19,7 @@ export const SectionKeyed = ({data, control}: props) => {
                 { data.keyed.map(({ name, original, text }) => <ContainerTranslate 
                     control={control} 
                     key={name} 
-                    path={`keyed.${name}`} 
+                    path={`keyed.${replaceForForm(name)}`} 
                     name={name} 
                     original={original} 
                     value={text}

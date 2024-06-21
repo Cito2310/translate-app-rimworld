@@ -1,16 +1,15 @@
-import { useSetData, useControlTranslate } from "./hooks";
+import { useControlTranslate } from "./hooks";
 import { TitleBar } from "./TitleBar/TitleBar";
 import { SectTranslate } from "./SectionTranslate/SectionTranslate";
 import { Dialogs } from "./Dialogs/Dialogs";
-import { useAppSelector } from "./store";
+import { useStartTranslate } from "./hooks/useStartTranslate";
 
 
 function App() {
 
-    useSetData();
-
     const { control, onClickGenerateTranslate } = useControlTranslate();
-    const {data, name} = useAppSelector( state => state.dataTranslateNew )
+    useStartTranslate();
+
 
     return (
         <div className="h-screen flex flex-col">

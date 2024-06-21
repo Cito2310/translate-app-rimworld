@@ -5,6 +5,7 @@ import { TextItemDef, TextMain, TextTypeDef } from "./TextsForTranslate";
 import { ContainerTranslate } from "./ContainerTranslate";
 import { Control, FieldValues } from "react-hook-form";
 import { Virtuoso } from "react-virtuoso";
+import { replaceForForm } from "../../helpers";
 
 interface props {
     data: {keyed: KeyedData[], defInjected: DefinjectedData[]};
@@ -51,7 +52,7 @@ export const SectionDefInjected = ({ data, control }: props) => {
                                 original={part.original} 
                                 value={part.text}
                                 control={ control }
-                                path={`defInjected.${typeDef.name}.${part.path}`}
+                                path={`defInjected.${typeDef.name}.${replaceForForm( part.path )}`}
                             /> ) }
                         </div>
                     </div> ) }
