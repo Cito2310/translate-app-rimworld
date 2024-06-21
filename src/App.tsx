@@ -2,6 +2,7 @@ import { useSetData, useControlTranslate } from "./hooks";
 import { SectionTranslate, TopBar } from "./components";
 import { TitleBar } from "./TitleBar/TitleBar";
 import { SectTranslate } from "./SectionTranslate/SectionTranslate";
+import { Dialogs } from "./Dialogs/Dialogs";
 
 
 function App() {
@@ -15,6 +16,8 @@ function App() {
             <TitleBar />
 
             <SectTranslate control={control} />
+
+            <Dialogs />
             {/* <TopBar 
                  onClickGenerateTranslate={ onClickGenerateTranslate }
              /> */}
