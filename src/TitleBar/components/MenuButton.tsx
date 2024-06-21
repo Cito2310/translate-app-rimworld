@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Icon } from "../../components";
+import { Icon } from "../../components/Icon";
 import { DropdownMenu } from "./DropdownMenu";
 
 interface props {

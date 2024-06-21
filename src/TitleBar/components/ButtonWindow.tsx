@@ -1,4 +1,4 @@
-import { Icon } from "../../components";
+import { Icon } from "../../components/Icon";
 
 interface props {
     element: "minus" | "square" | "xcross";

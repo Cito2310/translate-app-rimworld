@@ -1,7 +1,7 @@
 import { KeyedData } from "../../types/KeyedData";
-import { originalOnlyText } from "./";
+import { originalOnlyText } from ".";
 
-export const getKeyedTranslation = ( dataMissing: string[][] ): KeyedData[] => {
+export const getKeyed = ( dataMissing: string[][] ): KeyedData[] => {
     const sectionKeyed = dataMissing[2];
     const withoutTitle = sectionKeyed.slice(1);
 

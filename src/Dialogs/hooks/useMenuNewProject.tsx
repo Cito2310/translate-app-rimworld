@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
-import { getDataWithException, getDefInjected, getKeyedTranslation } from "../../helpers";
+import { controlLocalStorage, getDataWithException, getDefInjected, getKeyed } from "../../helpers";
 import { setDataTranslate } from "../../store/dataTranslate/dataTranslateSlice";
 import { useAppDispatch } from "../../store";
 
@@ -24,10 +24,12 @@ export const useMenuNewProject = () => {
             const rawData = getDataWithException(fileTranslate, fileExclude);
             const data = {
                 defInjected: getDefInjected(rawData),
-                keyed: getKeyedTranslation(rawData)
+                keyed: getKeyed(rawData)
             }
 
-            dispatch(setDataTranslate({data, name: getValues().value.trim()}))
+            const newState = { data, name: getValues().value.trim() };
+            controlLocalStorage("set", "current-translate", newState);
+            dispatch(setDataTranslate(newState))
         }
     }
 
