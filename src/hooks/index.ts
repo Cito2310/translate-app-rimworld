@@ -1,3 +1,2 @@
 export * from "./useControlTranslate";
-export * from "./usePrefix";
-export * from "./useSetData";
+export * from "./useStartTranslate";

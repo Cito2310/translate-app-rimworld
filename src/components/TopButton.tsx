@@ -7,21 +7,27 @@ interface props {
     disabled?: boolean;
 }
 
-export const TopButton = ({ isLoad, onClick, label, disabled }: props) => (
+export const TopButton = () => {
+  return (
+    <div>TopButton</div>
+  )
+}
 
-    <button 
-        disabled={disabled}
-        className="
-            p-1 rounded bg-white transition-base
-            hover:brightness-[.98] active:brightness-[.95]  
-            disabled:border-gray-400 disabled:text-gray-400 disabled:bg-gray-100 disabled:pointer-events-none" 
-        onClick={onClick}
-    >
+// export const TopButton = ({ isLoad, onClick, label, disabled }: props) => (
 
-        <p className="flex items-center gap-1">
-            { label } { isLoad &&  <Icon element="check" className="text-lg text-green-600" /> }
-        </p>
+//     <button 
+//         disabled={disabled}
+//         className="
+//             p-1 rounded bg-white transition-base
+//             hover:brightness-[.98] active:brightness-[.95]  
+//             disabled:border-gray-400 disabled:text-gray-400 disabled:bg-gray-100 disabled:pointer-events-none" 
+//         onClick={onClick}
+//     >
 
-    </button>
+//         <p className="flex items-center gap-1">
+//             { label } { isLoad &&  <Icon element="check" className="text-lg text-green-600" /> }
+//         </p>
 
-)
+//     </button>
+
+// )
