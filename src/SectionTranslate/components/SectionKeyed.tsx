@@ -9,13 +9,20 @@ interface props {
     control: Control<FieldValues, any>;
 }
 
-export const SectionKeyed = ({data}: props) => {
+export const SectionKeyed = ({data, control}: props) => {
   return (
     <>
         {data.keyed.length && <>
             <TextMain text="Keyed" />
             <div className="flex flex-col gap-2">
-                { data.keyed.map(({ name, original, text }) => <ContainerTranslate key={name} name={name} original={original} value={text} /> ) }
+                { data.keyed.map(({ name, original, text }) => <ContainerTranslate 
+                    control={control} 
+                    key={name} 
+                    path={`keyed.${name}`} 
+                    name={name} 
+                    original={original} 
+                    value={text}
+                /> ) }
             </div>
         </>}
     </>

@@ -25,7 +25,7 @@ export const useControlTranslate = () => {
 
 
     useEffect(() => {
-        const { DefInjectedForm, KeyedForm } = getValues();
+        const { defInjected: DefInjectedForm, keyed: KeyedForm } = getValues();
         if ( DefInjectedForm || KeyedForm ) {
             window.localStorage.setItem(
                 "current-translate",
