@@ -1,8 +1,8 @@
 import { useSetData, useControlTranslate } from "./hooks";
-import { SectionTranslate, TopBar } from "./components";
 import { TitleBar } from "./TitleBar/TitleBar";
 import { SectTranslate } from "./SectionTranslate/SectionTranslate";
 import { Dialogs } from "./Dialogs/Dialogs";
+import { useAppSelector } from "./store";
 
 
 function App() {
@@ -10,6 +10,7 @@ function App() {
     useSetData();
 
     const { control, onClickGenerateTranslate } = useControlTranslate();
+    const {data, name} = useAppSelector( state => state.dataTranslateNew )
 
     return (
         <div className="h-screen flex flex-col">
@@ -18,6 +19,7 @@ function App() {
             <SectTranslate control={control} />
 
             <Dialogs />
+
             {/* <TopBar 
                  onClickGenerateTranslate={ onClickGenerateTranslate }
              /> */}

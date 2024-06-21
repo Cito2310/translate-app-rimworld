@@ -3,10 +3,12 @@ import { configureStore } from "@reduxjs/toolkit";
 import { dataTranslateSlice } from './product';
 import { searchSlice } from './search';
 import { dialogSlice } from './dialog';
+import { dataTranslateNewSlice } from './dataTranslate/dataTranslateSlice';
 
 
 export const store = configureStore({
     reducer: {
+        dataTranslateNew: dataTranslateNewSlice.reducer,
         dataTranslate: dataTranslateSlice.reducer,
         search: searchSlice.reducer,
         dialog: dialogSlice.reducer,

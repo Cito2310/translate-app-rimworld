@@ -1,33 +1,29 @@
 import { ButtonDialog } from "../components/ButtonDialog"
 import { FrameDialog } from "../components/FrameDialog"
 import { InputDialog } from "../components/InputDialog"
+import { useMenuNewProject } from "../hooks/useMenuNewProject";
 
 interface props {
-    onExit: () => void;
-    handleSelectFileExclude: () => void;
-    handleSelectFileTranslate: () => void;
-    handleCreate: () => void;
-}
+    onExit: () => void;}
 
 export const MenuNewProject = ({ 
     onExit, 
-    handleCreate, 
-    handleSelectFileExclude, 
-    handleSelectFileTranslate,
 }: props) => {
+    const { handleCreate, handleSelectFileExclude, handleSelectFileTranslate, registerNameProject, availableCreate } = useMenuNewProject();
+
     return (
         <FrameDialog
             onExit={onExit}
             title="Nuevo Proyecto"
             btnBottoms={[
                 { label: "Cerrar", func: onExit },
-                { label: "Crear", func: handleCreate },
+                { label: "Crear", func: handleCreate, disabled: !availableCreate },
             ]}
         >
             <div className="flex flex-col gap-3">
                 <div className="flex gap-2 items-center">
                     <label>Nombre del proyecto :</label>
-                    <InputDialog placeholder="Nombre del proyecto" />
+                    <InputDialog placeholder="Nombre del proyecto" registerReturn={ registerNameProject("value") } />
                 </div>
 
                 <div className="flex gap-1 items-center">
