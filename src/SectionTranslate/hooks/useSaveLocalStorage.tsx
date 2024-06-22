@@ -10,7 +10,7 @@ interface props {
 }
 
 export const useSaveLocalStorage = ({ control, path, getValues }: props) => {
-    const { data, name } = useAppSelector( state => state.dataTranslateNew );
+    const { data, name } = useAppSelector( state => state.dataTranslate );
     const { defInjected, keyed } = data;
     const watchedValue = useWatch({ control, name: path });
 

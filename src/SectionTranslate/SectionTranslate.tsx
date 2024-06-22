@@ -11,7 +11,7 @@ interface props {
 }
 
 export const SectionTranslate = ({ control, getValues }: props) => {
-    const { defInjected, keyed } = useAppSelector( state => state.dataTranslateNew.data );
+    const { defInjected, keyed } = useAppSelector( state => state.dataTranslate.data );
     const defInjectedShow = useMemo(()=> dataToDefInjectedScreen(defInjected), [defInjected] )
 
 

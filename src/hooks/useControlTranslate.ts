@@ -4,7 +4,7 @@ import { useAppSelector } from "../store";
 
 
 export const useControlTranslate = () => {
-    const { data, name } = useAppSelector(state => state.dataTranslateNew);
+    const { data, name } = useAppSelector(state => state.dataTranslate);
     const { defInjected, keyed } = data;
 
     const { control, getValues} = useForm();

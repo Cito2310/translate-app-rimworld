@@ -16,6 +16,7 @@ function createWindow() {
     },
     icon: "icon.ico",
     frame: false,
+    backgroundColor: "#1f1f1f"
   })
 
 //   win.maximize();

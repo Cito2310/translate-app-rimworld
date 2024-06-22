@@ -9,7 +9,7 @@ interface props {
 }
 
 export const useMenu = ({ onGenerateTranslate }: props) => {
-    const stateTranslate = useAppSelector(state => state.dataTranslateNew)
+    const stateTranslate = useAppSelector(state => state.dataTranslate)
 
     const [displayed, setDisplayed] = useState(false)
     

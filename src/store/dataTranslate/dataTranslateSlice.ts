@@ -19,7 +19,7 @@ const initialState: DataTranslateState = {
 }
 
 
-export const dataTranslateNewSlice = createSlice({
+export const dataTranslateSlice = createSlice({
     name: 'dataTranslate',
     initialState,
     reducers: {
@@ -35,4 +35,4 @@ export const dataTranslateNewSlice = createSlice({
 export const { 
     setDataTranslate,
 
-} = dataTranslateNewSlice.actions;
+} = dataTranslateSlice.actions;
