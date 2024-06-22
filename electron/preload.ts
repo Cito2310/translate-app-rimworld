@@ -22,4 +22,9 @@ contextBridge.exposeInMainWorld('electronAPI', {
     appClose: () => ipcRenderer.invoke("app-close" as ipcNames),
     appMaximize: () => ipcRenderer.invoke("app-maximize" as ipcNames),
     appMinimize: () => ipcRenderer.invoke("app-minimize" as ipcNames),
+    
+    // CONTROL TRANSLATE PROJECT
+    readTranslateProject: () => ipcRenderer.invoke("read-translate-project" as ipcNames),
+    saveTranslateProject: ({ data }: { data: DataTranslateState }) => ipcRenderer.invoke("save-translate-project" as ipcNames, {data}),
+
 })

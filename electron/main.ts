@@ -35,7 +35,7 @@ function createWindow() {
     if (input.type === 'keyDown' && input.key === 'F12') {
       win.webContents.isDevToolsOpened()
         ? win.webContents.closeDevTools()
-        : win.webContents.openDevTools();
+        : win.webContents.openDevTools({ mode: "right" });
     }
 });
 }

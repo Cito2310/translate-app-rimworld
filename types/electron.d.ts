@@ -23,7 +23,7 @@ declare global {
             appMaximize: () => Promise<void>,
             appMinimize: () => Promise<void>,
 
-            readTranslateProject: () => Promise<DataTranslateState>,
+            readTranslateProject: () => Promise<DataTranslateState | null>,
             saveTranslateProject: ({ data }: { data: DataTranslateState }) => Promise<void>,
         }
     }
