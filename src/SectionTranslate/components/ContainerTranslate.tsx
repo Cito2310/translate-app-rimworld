@@ -1,5 +1,6 @@
-import { Control, Controller, FieldValues } from "react-hook-form";
+import { Control, Controller, FieldValues, UseFormGetValues } from "react-hook-form";
 import { useAutosizeTextArea } from "../hooks/useAutosizeTextArea";
+import { useSaveLocalStorage } from "../hooks/useSaveLocalStorage";
 
 interface props {
     value: string;
@@ -8,10 +9,12 @@ interface props {
     control: Control<FieldValues, any>;
     path: string;
     className?: string;
+    getValues: UseFormGetValues<FieldValues>;
 }
 
-export const ContainerTranslate = ({ original, value, name, control, path, className }: props) => {
-    const { ref, rest, textAreaRef } = useAutosizeTextArea( "value", value )
+export const ContainerTranslate = ({ original, value, name, control, path, className, getValues }: props) => {
+    const { ref, rest, textAreaRef } = useAutosizeTextArea( "value", value );
+    useSaveLocalStorage({ control, path, getValues })
 
     return (
         <Controller
