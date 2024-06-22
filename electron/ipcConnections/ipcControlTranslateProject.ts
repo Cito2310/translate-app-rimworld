@@ -24,7 +24,7 @@ export const ipcControlTranslateProject = (app: Electron.App, win: BrowserWindow
         const { canceled, filePaths } = await dialog.showOpenDialog({ properties: ["openDirectory"]});
 
         if ( canceled === false ) {
-            const pathFile = path.join(filePaths[0], args.data.name.split(" ").join("_")+"_Translate")
+            const pathFile = path.join(filePaths[0], args.data.name.split(" ").join("_")+"_Translate.json")
             writeFileSync(pathFile, JSON.stringify(args.data), "utf-8");
         }
     })
