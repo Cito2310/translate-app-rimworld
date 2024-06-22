@@ -1,7 +1,4 @@
-export type keyLocalStorage = "data-exclude" 
-                            | "data-base"
-                            | "current-translate"
-                            | "currentPrefix"
+export type keyLocalStorage = "current-translate"
 
 export type funcLocalStorage = "get" | "set" | "remove"
 

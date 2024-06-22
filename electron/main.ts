@@ -19,7 +19,7 @@ function createWindow() {
     backgroundColor: "#1f1f1f"
   })
 
-//   win.maximize();
+  win.maximize();
   win.show();
 
   if (app.isPackaged) {

@@ -5,7 +5,7 @@ interface props {
     children: JSX.Element | JSX.Element[];
     title: string;
     onExit: () => void;
-    btnBottoms: {func: ()=>void; label: string, disabled?: boolean}[];
+    btnBottoms?: {func: ()=>void; label: string, disabled?: boolean}[];
 }
 
 export const FrameDialog = ({ children, title, onExit, btnBottoms }: props) => {
@@ -28,7 +28,7 @@ export const FrameDialog = ({ children, title, onExit, btnBottoms }: props) => {
             { children }
 
             <div className="flex justify-end gap-2 mt-4">
-                { btnBottoms.map(({ func, label, disabled }) => 
+                { btnBottoms?.map(({ func, label, disabled }) => 
                     <ButtonDialog disabled={disabled} key={label} className="w-[100px]" onClick={func} label={label} />
                 )}
             </div>

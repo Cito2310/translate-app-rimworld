@@ -44,8 +44,14 @@ export const useMenu = ({ onGenerateTranslate }: props) => {
 
     }
 
-    const handlePreferences = () => {  }
-    const handleSettingProject = () => {  }
+    const handlePreferences = () => { 
+        dispatch( setDialog("preferences") ); 
+        setDisplayed(false);
+    }
+    const handleSettingProject = () => { 
+        dispatch( setDialog("settingProject") ); 
+        setDisplayed(false);
+    }
 
     return {
         onToggleMenu,

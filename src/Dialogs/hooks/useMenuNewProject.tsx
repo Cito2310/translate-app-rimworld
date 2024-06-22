@@ -4,7 +4,9 @@ import { controlLocalStorage, getDataWithException, getDefInjected, getKeyed } f
 import { setDataTranslate } from "../../store/dataTranslate/dataTranslateSlice";
 import { useAppDispatch } from "../../store";
 
-export const useMenuNewProject = () => {
+export const useMenuNewProject = (
+    onExit:()=> void
+) => {
     const dispatch = useAppDispatch();
 
     const { register, getValues, watch } = useForm();
@@ -30,6 +32,8 @@ export const useMenuNewProject = () => {
             const newState = { data, name: getValues().value.trim() };
             controlLocalStorage("set", "current-translate", newState);
             dispatch(setDataTranslate(newState))
+            
+            onExit()
         }
     }
 

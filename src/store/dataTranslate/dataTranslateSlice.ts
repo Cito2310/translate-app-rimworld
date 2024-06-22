@@ -24,6 +24,10 @@ export const dataTranslateSlice = createSlice({
     initialState,
     reducers: {
 
+        changeName: ( state, action: { payload: string } ) => {
+            state.name = action.payload;
+        },
+
         setDataTranslate: ( state, action: { payload: { data: { keyed: KeyedData[]; defInjected: DefinjectedData[] }, name: string } } ) => {
             state.name = action.payload.name;
             state.data = action.payload.data;
@@ -34,5 +38,6 @@ export const dataTranslateSlice = createSlice({
 
 export const { 
     setDataTranslate,
+    changeName,
 
 } = dataTranslateSlice.actions;

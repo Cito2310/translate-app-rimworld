@@ -5,11 +5,11 @@ interface DialogState {
     noneDialog: boolean;
 }
 
-type DialogTypes = "" | "newProject"
+type DialogTypes = "" | "newProject" | "preferences" | "settingProject"
 
 const initialState: DialogState = {
-    currentDialog: "newProject",
-    noneDialog: false,
+    currentDialog: "",
+    noneDialog: true,
 }
 
 

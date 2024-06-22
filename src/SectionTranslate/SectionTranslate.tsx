@@ -1,18 +1,20 @@
 import { Control, FieldValues, UseFormGetValues } from "react-hook-form";
-import { useAppSelector } from "../store";
+import { RootState, useAppSelector } from "../store";
 import { useMemo } from "react";
 import { dataToDefInjectedScreen } from "./helpers/dataToDefInjectedScreen";
 import { DefInjectedRow, KeyedRow } from "./components/RowTranslate";
 import { TextMain } from "./components/TextsForTranslate";
+import { createSelector } from "@reduxjs/toolkit";
 
 interface props {
     control: Control<FieldValues, any>;
     getValues: UseFormGetValues<FieldValues>;
 }
 
+
 export const SectionTranslate = ({ control, getValues }: props) => {
-    const { defInjected, keyed } = useAppSelector( state => state.dataTranslate.data );
-    const defInjectedShow = useMemo(()=> dataToDefInjectedScreen(defInjected), [defInjected] )
+    const { defInjected, keyed } = useAppSelector(state => state.dataTranslate.data);
+    const defInjectedShow = useMemo(()=> dataToDefInjectedScreen(defInjected), [defInjected] );
 
 
     return (

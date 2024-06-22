@@ -1,7 +1,8 @@
 import { useAppDispatch, useAppSelector } from "../store"
 import { setNoneDialog } from "../store/dialog"
 import { MenuNewProject } from "./Menus/MenuNewProject"
-import { useMenuNewProject } from "./hooks/useMenuNewProject"
+import { MenuPreferences } from "./Menus/MenuPreferences"
+import { MenuSettingProject } from "./Menus/MenuSettingProject"
 
 export const TitleDialog = ({ text }: { text: string }) => <h1 className="font-semibold ">{ text }</h1>
 
@@ -11,8 +12,6 @@ export const Dialogs = () => {
 
     const onExit = () => dispatch(setNoneDialog());
 
-
-
     return (
         <>
             {
@@ -21,6 +20,8 @@ export const Dialogs = () => {
             }
             
             { currentDialog === "newProject" && <MenuNewProject onExit={onExit} /> }
+            { currentDialog === "settingProject" && <MenuSettingProject onExit={onExit} /> }
+            { currentDialog === "preferences" && <MenuPreferences onExit={onExit} /> }
         </>
     )
 }

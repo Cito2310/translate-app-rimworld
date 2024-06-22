@@ -9,7 +9,7 @@ interface props {
 export const MenuNewProject = ({ 
     onExit, 
 }: props) => {
-    const { handleCreate, handleSelectFileExclude, handleSelectFileTranslate, registerNameProject, availableCreate } = useMenuNewProject();
+    const { handleCreate, handleSelectFileExclude, handleSelectFileTranslate, registerNameProject, availableCreate } = useMenuNewProject(onExit);
 
     return (
         <FrameDialog
