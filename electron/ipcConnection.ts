@@ -1,50 +1,18 @@
-import { KeyedData } from './../types/KeyedData';
-import { DefinjectedData } from './../types/DefInjectedData';
-import { BrowserWindow, dialog, ipcMain } from 'electron';
+import { BrowserWindow } from 'electron';
 
-import { ipcNames } from '../types/ipcNames';
-import { outputTranslate, readFileTranslate } from './helpers';
-import { DataTranslateState } from '../src/store/dataTranslate/dataTranslateSlice';
+import { ipcControlWindow } from './ipcConnections/ipcControlWindow';
+import { ipcReadFileTranslate } from './ipcConnections/ipcReadFileTranslate';
+import { ipcGenerateFilesTranslate } from './ipcConnections/ipcGenerateFilesTranslate';
+import { ipcControlTranslateProject } from './ipcConnections/ipcControlTranslateProject';
 
 export const ipConnection = (app: Electron.App, win: BrowserWindow) => {
 
-    ipcMain.handle("read-file-translate" as ipcNames, async(e, args)=>{
-        const { canceled, filePaths } = await dialog.showOpenDialog({ properties: ["openFile"] });
+    ipcReadFileTranslate( app, win );
 
-        if ( canceled === false )  return readFileTranslate( filePaths[0] );
-        return null;
-    })
+    ipcGenerateFilesTranslate( app, win );
 
-    ipcMain.handle("generate-files-translate" as ipcNames, async(e, args: { 
-        keyedData: KeyedData[], 
-        defInjectedData: DefinjectedData[], 
-        prefix: string, 
-        fileTranslate: DataTranslateState
-    })=>{
-        const { defInjectedData, keyedData, prefix, fileTranslate } = args;
+    ipcControlWindow( app, win );
 
-        outputTranslate({ 
-            defInjected: defInjectedData,
-            keyed: keyedData, 
-            prefix,
-            fileTranslate,
-        });
-    })
+    ipcControlTranslateProject( app, win );
 
-
-
-
-    // APPLICATION CONTROL WINDOW
-    ipcMain.handle("app-close" as ipcNames, async(e, args)=>{
-        app.quit()
-    })
-
-    ipcMain.handle("app-maximize" as ipcNames, async(e, args)=>{
-        if(win.isMaximized()) { win.unmaximize() } 
-        else { win.maximize() }
-    })
-
-    ipcMain.handle("app-minimize" as ipcNames, async(e, args)=>{
-        win.minimize()
-    })
 }

@@ -3,4 +3,7 @@ export type ipcNames =
     "generate-files-translate" |
     "app-minimize" |
     "app-maximize" |
-    "app-close"
+    "app-close" |
+
+    "read-translate-project" |
+    "save-translate-project"

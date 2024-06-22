@@ -6,7 +6,11 @@ import { DataTranslateState } from '../src/store/dataTranslate/dataTranslateSlic
 const { contextBridge, ipcRenderer } = require('electron')
 
 contextBridge.exposeInMainWorld('electronAPI', {
+
+    // READ FILE TRANSLATE
     readFileTranslate: () => ipcRenderer.invoke('read-file-translate' as ipcNames),
+
+    // GENERATE FILES TRANSLATE
     generateFilesTranslate: ({ keyedData, defInjectedData, prefix, fileTranslate }: {
         keyedData: KeyedData[];
         defInjectedData: DefinjectedData[];
