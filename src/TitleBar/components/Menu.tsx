@@ -4,7 +4,7 @@ import { MenuButton } from "./MenuButton";
 interface props {
     onToggle: () => void;
     displayed: boolean;
-    menuData: {label: string; handle: () => void}[][]
+    menuData: {label: string; handle: () => void; needData?: boolean}[][]
 }
 
 export const Menu = ({ menuData, displayed, onToggle }: props) => {

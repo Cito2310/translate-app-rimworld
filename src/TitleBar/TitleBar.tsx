@@ -3,12 +3,14 @@ import { InputSearch } from "./components/InputSearch"
 import { useTitleBar } from "./hooks/useTitleBar"
 import { useMenu } from "./hooks/useMenu"
 import { Menu } from "./components/Menu"
+import { useAppSelector } from "../store"
 
 interface props {
     onGenerateTranslate: () => Promise<void>;
 }
 
 export const TitleBar = ({ onGenerateTranslate }: props) => {
+    const existData = useAppSelector( state => state.dataTranslate.existData )
     const { appClose, appMaximize, appMinimize } = useTitleBar()
     const { 
         onToggleMenu,
@@ -32,12 +34,12 @@ export const TitleBar = ({ onGenerateTranslate }: props) => {
                     [
                         { label: "Nuevo Proyecto", handle: handleNewProject },
                         { label: "Abrir Proyecto", handle: handleOpenProject },
-                        { label: "Guardar Proyecto", handle: handleSaveProject },
-                        { label: "Generar Traducción", handle: handleGenerateTranslate },
+                        { label: "Guardar Proyecto", handle: handleSaveProject, needData: !existData },
+                        { label: "Generar Traducción", handle: handleGenerateTranslate, needData: !existData },
                     ],
                     [
                         { label: "Preferencias", handle: handlePreferences },
-                        { label: "Conf. Del Proyecto", handle: handleSettingProject },
+                        { label: "Conf. Del Proyecto", handle: handleSettingProject, needData: !existData },
                     ]
                 ]} />
             </div>

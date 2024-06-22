@@ -19,7 +19,7 @@ export const useControlTranslate = () => {
             keyedData: parse.keyed,
             defInjectedData: parse.defInjected,
             prefix: name.split(" ").join("_"),
-            fileTranslate: { data, name }
+            fileTranslate: { data, name, existData: true }
         })
     }
 

@@ -3,7 +3,7 @@ import { DropdownSection } from "./DropdownSection"
 import { DropdownSeparate } from "./DropdownSeparate"
 
 interface props {
-    menuData: {label: string; handle: () => void}[][]
+    menuData: {label: string; handle: () => void; needData?: boolean}[][]
 }
 
 export const DropdownMenu = ({ menuData }: props) => {
@@ -12,7 +12,7 @@ export const DropdownMenu = ({ menuData }: props) => {
             {
                 menuData.map((section, index) => <div key={index+"Menudata"}>
                     <DropdownSection>
-                        { section.map(({ handle, label }, index) => <DropdownOption key={label+index} label={label} onClick={handle} /> ) }
+                        { section.map(({ handle, label, needData }, index) => <DropdownOption key={label+index} label={label} onClick={handle} needData={needData} /> ) }
                     </DropdownSection>
 
                     { index !== menuData.length-1 && <DropdownSeparate /> }

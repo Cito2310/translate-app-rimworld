@@ -7,7 +7,8 @@ export interface DataTranslateState {
     data: {
         keyed: KeyedData[];
         defInjected: DefinjectedData[];
-    },
+    };
+    existData: boolean;
 }
 
 const initialState: DataTranslateState = {
@@ -16,6 +17,7 @@ const initialState: DataTranslateState = {
         keyed: [],
         defInjected: [],
     },
+    existData: false
 }
 
 
@@ -31,6 +33,7 @@ export const dataTranslateSlice = createSlice({
         setDataTranslate: ( state, action: { payload: { data: { keyed: KeyedData[]; defInjected: DefinjectedData[] }, name: string } } ) => {
             state.name = action.payload.name;
             state.data = action.payload.data;
+            state.existData = true;
         },
 
     }
