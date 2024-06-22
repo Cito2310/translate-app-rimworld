@@ -15,7 +15,12 @@ export const useControlTranslate = () => {
 
         const parse = parseData({ defInjected, defInjectedForm, keyed, keyedForm });
 
-        await window.electronAPI.generateFilesTranslate(parse.keyed, parse.defInjected, name.split(" ").join("_"))
+        await window.electronAPI.generateFilesTranslate({
+            keyedData: parse.keyed,
+            defInjectedData: parse.defInjected,
+            prefix: name.split(" ").join("_"),
+            fileTranslate: { data, name }
+        })
     }
 
 

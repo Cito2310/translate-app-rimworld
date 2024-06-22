@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 import { KeyedData } from '../../../types/KeyedData';
 import { DefinjectedData } from '../../../types/DefInjectedData';
 
-interface DataTranslateState {
+export interface DataTranslateState {
     name: string;
     data: {
         keyed: KeyedData[];

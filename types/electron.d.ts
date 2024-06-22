@@ -1,13 +1,27 @@
+import { DataTranslateState } from "../src/store/dataTranslate/dataTranslateSlice";
+import { DefinjectedData } from "./DefInjectedData"
+import { KeyedData } from "./KeyedData"
+
 declare global {
     interface Window {
         electronAPI: {
             readFileTranslate: () => Promise<string[][]>,
-            generateFilesTranslate: ( keyedData: KeyedData, defInjectedData: DefinjectedData, prefix: string ) => Promise<undefined>,
+            generateFilesTranslate: ({ 
+                keyedData,
+                defInjectedData,
+                prefix,
+                fileTranslate,
+            }: {
+                keyedData: KeyedData[]; 
+                defInjectedData: DefinjectedData[]; 
+                prefix: string; 
+                fileTranslate: DataTranslateState;
+            }) => Promise<void>,
 
 
-            appClose: () => Promise<undefined>,
-            appMaximize: () => Promise<undefined>,
-            appMinimize: () => Promise<undefined>,
+            appClose: () => Promise<void>,
+            appMaximize: () => Promise<void>,
+            appMinimize: () => Promise<void>,
         }
     }
 }

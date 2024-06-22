@@ -4,6 +4,7 @@ import { BrowserWindow, dialog, ipcMain } from 'electron';
 
 import { ipcNames } from '../types/ipcNames';
 import { outputTranslate, readFileTranslate } from './helpers';
+import { DataTranslateState } from '../src/store/dataTranslate/dataTranslateSlice';
 
 export const ipConnection = (app: Electron.App, win: BrowserWindow) => {
 
@@ -14,13 +15,19 @@ export const ipConnection = (app: Electron.App, win: BrowserWindow) => {
         return null;
     })
 
-    ipcMain.handle("generate-files-translate" as ipcNames, async(e, args: { keyedData: KeyedData[], defInjectedData: DefinjectedData[], prefix: string })=>{
-        const { defInjectedData, keyedData, prefix } = args;
+    ipcMain.handle("generate-files-translate" as ipcNames, async(e, args: { 
+        keyedData: KeyedData[], 
+        defInjectedData: DefinjectedData[], 
+        prefix: string, 
+        fileTranslate: DataTranslateState
+    })=>{
+        const { defInjectedData, keyedData, prefix, fileTranslate } = args;
 
         outputTranslate({ 
             defInjected: defInjectedData,
             keyed: keyedData, 
-            prefix
+            prefix,
+            fileTranslate,
         });
     })
 

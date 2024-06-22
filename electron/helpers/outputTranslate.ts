@@ -1,4 +1,4 @@
-import { mkdirSync, rmSync } from "fs";
+import { mkdirSync, rmSync, writeFileSync } from "fs";
 import { join as pathJoin } from "path";
 import { homedir } from "os";
 
@@ -6,19 +6,22 @@ import { generateXML } from "./";
 
 import { DefinjectedData } from "../../types/DefInjectedData";
 import { KeyedData } from "../../types/KeyedData";
+import { DataTranslateState } from './../../src/store/dataTranslate/dataTranslateSlice';
 
 interface props {
     defInjected: DefinjectedData[];
     keyed: KeyedData[];
     prefix: string;
+    fileTranslate: DataTranslateState
 }
 
 // Esta funcion tiene el objetivo de parsear los datos de DefInjected y Keyed, y establecer las rutas para que lo use generateXML
-export const outputTranslate = ({ defInjected, keyed, prefix }: props) => {
+export const outputTranslate = ({ defInjected, keyed, prefix, fileTranslate }: props) => {
     // const pathTranslate = pathJoin(__dirname, "../../../", "dir", prefix);
     const pathTranslate = pathJoin( homedir(), "Desktop", prefix+"_Translate");
     const pathDefInjected = pathJoin(pathTranslate, "DefInjected");
     const pathKeyed = pathJoin(pathTranslate, "Keyed");
+    const pathFileTranslate = pathJoin(pathTranslate, prefix+"_Translate.json");
 
     // PARSEAR DATOS
     // Parsear DefInjeted
@@ -63,5 +66,8 @@ export const outputTranslate = ({ defInjected, keyed, prefix }: props) => {
         data: parseKeyed,
         path: pathJoin(pathKeyed, `${prefix ? `${prefix}_` : ""}Misc_Gameplay.xml`),
     })
+
+    // Generar FileTranslate
+    writeFileSync(pathFileTranslate, JSON.stringify(fileTranslate), "utf-8")
 
 }

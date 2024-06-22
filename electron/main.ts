@@ -29,6 +29,15 @@ function createWindow() {
 
     win.webContents.openDevTools();
   }
+
+
+  win.webContents.on('before-input-event', (_, input) => {
+    if (input.type === 'keyDown' && input.key === 'F12') {
+      win.webContents.isDevToolsOpened()
+        ? win.webContents.closeDevTools()
+        : win.webContents.openDevTools({ mode: 'left' });
+    }
+});
 }
 
 app.whenReady().then(() => {
