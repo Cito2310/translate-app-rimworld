@@ -2,20 +2,22 @@ import { DropdownOption } from "./DropdownOption"
 import { DropdownSection } from "./DropdownSection"
 import { DropdownSeparate } from "./DropdownSeparate"
 
-export const DropdownMenu = () => {
+interface props {
+    menuData: {label: string; handle: () => void}[][]
+}
+
+export const DropdownMenu = ({ menuData }: props) => {
     return (
-        <div className="bg-[#363636] z-50 absolute rounded rounded-tl-none shadow-[0_0px_12px_0px_rgba(0,0,0,0.2)]">
-            <DropdownSection>
-                <DropdownOption label="Nuevo Proyecto" onClick={()=>console.log("TODO")} />
-                <DropdownOption label="Guardar Proyecto" onClick={()=>console.log("TODO")} />
-                <DropdownOption label="Generar Traducción" onClick={()=>console.log("TODO")} />
-            </DropdownSection>
+        <div className="bg-[#363636] w-[200px] z-50 absolute rounded rounded-tl-none shadow-[0_0px_12px_0px_rgba(0,0,0,0.2)]">
+            {
+                menuData.map((section, index) => <div key={index+"Menudata"}>
+                    <DropdownSection>
+                        { section.map(({ handle, label }, index) => <DropdownOption key={label+index} label={label} onClick={handle} /> ) }
+                    </DropdownSection>
 
-            <DropdownSeparate />
-
-            <DropdownSection>
-                <DropdownOption label="Preferencias" onClick={()=>console.log("TODO")} />
-            </DropdownSection>
+                    { index !== menuData.length-1 && <DropdownSeparate /> }
+                </div>)
+            }
         </div>
     )
 }

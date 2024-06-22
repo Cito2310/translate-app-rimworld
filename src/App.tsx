@@ -13,7 +13,7 @@ function App() {
 
     return (
         <div className="h-screen flex flex-col">
-            <TitleBar />
+            <TitleBar onGenerateTranslate={ onClickGenerateTranslate } />
 
             <SectionTranslate control={control} getValues={getValues} />
 
