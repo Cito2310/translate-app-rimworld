@@ -1,8 +1,5 @@
 import { BrowserWindow, ipcMain, shell } from "electron";
 import { ipcNames } from "../../types/ipcNames";
-import translate from "google-translate-open-api";
-// import { translate } from '@vitalets/google-translate-api';
-// import { translate } from '@vitalets/google-translate-api';
 
 export const ipcTranslateGoogle = (app: Electron.App, win: BrowserWindow) => {
 
