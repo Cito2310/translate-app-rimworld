@@ -21,17 +21,10 @@ export const ContainerTranslate = ({ original, value, name, control, path, class
     useSaveLocalStorage({ control, path, getValues })
 
     const [showOriginal, setShowOriginal] = useState(false);
-    const [showTranslate, setShowTranslate] = useState(false);
-    const [translateText, setTranslateText] = useState("");
 
     const toggleShowOriginal = () => setShowOriginal(!showOriginal);
-    const toggleShowTranslate = () => setShowTranslate(!showTranslate);
+    const toggleShowTranslate = async() => await window.electronAPI.translateGoogle(original);
 
-    useEffect(()=>{
-        if (showTranslate === true) {
-            // translate("", { tld: "com", to: "es" }).then((data) => console.log(data))
-        }
-    }, [showTranslate])
 
     return (
         <Controller
@@ -41,7 +34,7 @@ export const ContainerTranslate = ({ original, value, name, control, path, class
             render={({ field }) => 
                 <div>
                     <div className={`flex gap-2 ${className} items-center`}>
-                        <div className="flex">
+                        <div className="flex gap-0.5">
                             <ButtonContainerTranslate onClick={toggleShowOriginal}>r</ButtonContainerTranslate>
                             <ButtonContainerTranslate onClick={toggleShowTranslate}><Icon element="translate" /></ButtonContainerTranslate>
                         </div>
@@ -56,8 +49,7 @@ export const ContainerTranslate = ({ original, value, name, control, path, class
                     </div>
 
                     <div className="flex">
-                        { showOriginal && <p>{original}</p> }
-                        { showTranslate && <p>{translateText}</p> }
+                        { showOriginal && <p className="ml-14 text-[0.9em]">Original: {original}</p> }
                     </div>
                 </div>
             }

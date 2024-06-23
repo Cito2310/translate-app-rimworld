@@ -27,4 +27,7 @@ contextBridge.exposeInMainWorld('electronAPI', {
     readTranslateProject: () => ipcRenderer.invoke("read-translate-project" as ipcNames),
     saveTranslateProject: ({ data }: { data: DataTranslateState }) => ipcRenderer.invoke("save-translate-project" as ipcNames, {data}),
 
+    // GOOGLE TRANSLATE
+    translateGoogle: (text: string) => ipcRenderer.invoke("translate-google" as ipcNames, text)
+
 })

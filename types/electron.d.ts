@@ -25,6 +25,8 @@ declare global {
 
             readTranslateProject: () => Promise<DataTranslateState | null>,
             saveTranslateProject: ({ data }: { data: DataTranslateState }) => Promise<void>,
+
+            translateGoogle: (text: string) => Promise<void>
         }
     }
 }
