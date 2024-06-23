@@ -5,11 +5,8 @@ import { useMenu } from "./hooks/useMenu"
 import { Menu } from "./components/Menu"
 import { useAppSelector } from "../store"
 
-interface props {
-    onGenerateTranslate: () => Promise<void>;
-}
 
-export const TitleBar = ({ onGenerateTranslate }: props) => {
+export const TitleBar = () => {
     const existData = useAppSelector( state => state.dataTranslate.existData )
     const { appClose, appMaximize, appMinimize } = useTitleBar()
     const { 
@@ -21,7 +18,7 @@ export const TitleBar = ({ onGenerateTranslate }: props) => {
         handleOpenProject, 
         handlePreferences, 
         handleSaveProject, 
-        handleSettingProject } = useMenu({ onGenerateTranslate })
+        handleSettingProject } = useMenu()
 
     return (
         <nav className="w-screen h-[34px] draggable flex justify-between bg-[#161616] text-[#dddddd]">

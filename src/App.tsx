@@ -1,21 +1,22 @@
-import { useControlTranslate } from "./hooks";
 import { TitleBar } from "./TitleBar/TitleBar";
 import { Dialogs } from "./Dialogs/Dialogs";
 import { useStartTranslate } from "./hooks/useStartTranslate";
-import { SectionTranslate } from "./SectionTranslate/SectionTranslate";
+import { useAppSelector } from "./store";
+import { SectionTranslateVirtuoso } from "./SectionTranslate/SectionTranslateVirtuoso";
 
 
 function App() {
+    const existData = useAppSelector(state => state.dataTranslate.existData);
 
-    const { control, onClickGenerateTranslate, getValues } = useControlTranslate();
     useStartTranslate();
 
 
     return (
         <div className="h-screen flex flex-col">
-            <TitleBar onGenerateTranslate={ onClickGenerateTranslate } />
+            <TitleBar />
 
-            <SectionTranslate control={control} getValues={getValues} />
+            { existData && <SectionTranslateVirtuoso /> }
+            {/* <SectionTranslate control={control} getValues={getValues} /> */}
 
             <Dialogs />
 

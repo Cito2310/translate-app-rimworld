@@ -3,12 +3,10 @@ import { useAppDispatch, useAppSelector } from "../../store"
 import { setDialog } from "../../store/dialog";
 import { controlLocalStorage } from "../../helpers";
 import { setDataTranslate } from "../../store/dataTranslate/dataTranslateSlice";
+import { generateTranslate } from "../../helpers/generateTranslate";
 
-interface props {
-    onGenerateTranslate: () => Promise<void>;
-}
 
-export const useMenu = ({ onGenerateTranslate }: props) => {
+export const useMenu = () => {
     const stateTranslate = useAppSelector(state => state.dataTranslate)
 
     const [displayed, setDisplayed] = useState(false)
@@ -39,7 +37,8 @@ export const useMenu = ({ onGenerateTranslate }: props) => {
     }
 
     const handleGenerateTranslate = async() => { 
-        await onGenerateTranslate(); 
+        const dataTranslate = useAppSelector(state => state.dataTranslate)
+        await generateTranslate(dataTranslate); 
         setDisplayed(false);
 
     }

@@ -1,29 +1,19 @@
 import { useForm } from "react-hook-form";
-import { parseData } from "../helpers";
-import { useAppSelector } from "../store";
+import { useAppDispatch, useAppSelector } from "../store";
+import { useMemo } from "react";
+import { transformToForm } from "../helpers/transformToForm";
+import { setGetValues } from "../store/dataTranslate/dataTranslateSlice";
 
 
 export const useControlTranslate = () => {
-    const { data, name } = useAppSelector(state => state.dataTranslate);
-    const { defInjected, keyed } = data;
+    const data = useAppSelector(state => state.dataTranslate.data);
 
-    const { control, getValues} = useForm();
-
-
-    const onClickGenerateTranslate = async() => {
-        const { defInjected: defInjectedForm, keyed: keyedForm } = getValues();
-
-        const parse = parseData({ defInjected, defInjectedForm, keyed, keyedForm });
-
-        await window.electronAPI.generateFilesTranslate({
-            keyedData: parse.keyed,
-            defInjectedData: parse.defInjected,
-            prefix: name.split(" ").join("_"),
-            fileTranslate: { data, name, existData: true }
-        })
-    }
+    const defaultValues = useMemo(()=>transformToForm(data),[data])
+    
+    const { control, getValues} = useForm({defaultValues});
+    const dispatch = useAppDispatch();
+    dispatch(setGetValues(getValues))
 
 
-
-    return { control, onClickGenerateTranslate, getValues }
+    return { control, getValues }
 }
