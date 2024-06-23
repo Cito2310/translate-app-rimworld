@@ -25,7 +25,6 @@ export const ContainerTranslate = ({ original, value, name, control, path, class
     const toggleShowOriginal = () => setShowOriginal(!showOriginal);
     const toggleShowTranslate = async() => await window.electronAPI.translateGoogle(original);
 
-
     return (
         <Controller
             name={path}

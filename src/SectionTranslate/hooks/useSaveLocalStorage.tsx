@@ -20,6 +20,7 @@ export const useSaveLocalStorage = ({ control, path, getValues }: props) => {
             const { defInjected: defInjectedForm, keyed: keyedForm } = getValues();
 
             if ( defInjectedForm || keyedForm ) {
+                // GENERATE TO MANY LAG
                 controlLocalStorage("set", "current-translate", {
                     name,
                     data: parseData({ defInjected, defInjectedForm, keyed, keyedForm }) 
