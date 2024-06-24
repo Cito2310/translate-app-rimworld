@@ -4,13 +4,16 @@ import App from './App';
 import "./style.css"
 import { Provider } from 'react-redux';
 import { store } from './store/store';
+import { GetValuesProvider } from './context/useGetValuesContext';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root')!);
 root.render(
     <Provider store={ store }>
-        {/* <React.StrictMode> */}
-            <App />
-        {/* </React.StrictMode> */}
-    </Provider>
+            <GetValuesProvider>
+            {/* <React.StrictMode> */}
+                <App />
+            {/* </React.StrictMode> */}
+    </GetValuesProvider>
+        </Provider>
 );

@@ -4,8 +4,8 @@ import { UseFormGetValues } from "react-hook-form";
 import { DataTranslateState } from "../store/dataTranslate/dataTranslateSlice";
 
 
-export const generateTranslate = async(dataTranslate: DataTranslateState) => {
-    const { data, getValues , name } = dataTranslate;
+export const generateTranslate = async(dataTranslate: DataTranslateState, getValues: UseFormGetValues<any>) => {
+    const { data, name } = dataTranslate;
     const { defInjected, keyed } = data;
 
     const { defInjected: defInjectedForm, keyed: keyedForm } = getValues!();

@@ -9,7 +9,6 @@ export interface DataTranslateState {
         defInjected: DefinjectedData[];
     };
     existData: boolean;
-    getValues: any;
 }
 
 const initialState: DataTranslateState = {
@@ -19,7 +18,6 @@ const initialState: DataTranslateState = {
         defInjected: [],
     },
     existData: false,
-    getValues: null,
 }
 
 
@@ -38,16 +36,11 @@ export const dataTranslateSlice = createSlice({
             state.existData = true;
         },
 
-        setGetValues: ( state, action: { payload: any } ) => {
-            state.getValues = action.payload;
-        }
-
     }
 });
 
 export const { 
     setDataTranslate,
     changeName,
-    setGetValues
 
 } = dataTranslateSlice.actions;

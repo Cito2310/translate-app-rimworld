@@ -1,5 +1,6 @@
 import { controlLocalStorage } from "../../helpers";
-import { useAppSelector } from "../../store";
+import { useAppDispatch, useAppSelector } from "../../store";
+import { changeName } from "../../store/dataTranslate/dataTranslateSlice";
 import { FrameDialog } from "../components/FrameDialog"
 import { InputDialog } from "../components/InputDialog";
 import { useForm } from "react-hook-form";
@@ -14,10 +15,12 @@ export const MenuSettingProject = ({
 
     const dataTranslate = useAppSelector( state => state.dataTranslate )
     const { register, getValues } = useForm({ defaultValues: { name: dataTranslate.name } });
+    const dispatch = useAppDispatch();
 
     const handleChangesConfig = () => {
         const newName = getValues().name;
         controlLocalStorage("set", "current-translate", {...dataTranslate, name: newName,} );
+        dispatch( changeName(newName) )
         onExit();
     }
 

@@ -4,10 +4,12 @@ import { setDialog } from "../../store/dialog";
 import { controlLocalStorage } from "../../helpers";
 import { setDataTranslate } from "../../store/dataTranslate/dataTranslateSlice";
 import { generateTranslate } from "../../helpers/generateTranslate";
+import { useGetValuesContext } from "../../context/useGetValuesContext";
 
 
 export const useMenu = () => {
-    const stateTranslate = useAppSelector(state => state.dataTranslate)
+    const stateTranslate = useAppSelector(state => state.dataTranslate);
+    const { getValues } = useGetValuesContext();
 
     const [displayed, setDisplayed] = useState(false)
     
@@ -37,8 +39,7 @@ export const useMenu = () => {
     }
 
     const handleGenerateTranslate = async() => { 
-        const dataTranslate = useAppSelector(state => state.dataTranslate)
-        await generateTranslate(dataTranslate); 
+        if ( getValues) await generateTranslate(stateTranslate, getValues); 
         setDisplayed(false);
 
     }
