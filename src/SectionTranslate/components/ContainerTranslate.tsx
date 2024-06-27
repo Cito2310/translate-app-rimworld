@@ -3,7 +3,8 @@ import { useAutosizeTextArea } from "../hooks/useAutosizeTextArea";
 import { useSaveLocalStorage } from "../hooks/useSaveLocalStorage";
 import { Icon } from "../../components/Icon";
 import { ButtonContainerTranslate } from "./ButtonContainerTranslate";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { originalOnlyText } from "../../helpers";
 
 
 interface props {
@@ -23,7 +24,7 @@ export const ContainerTranslate = ({ original, value, name, control, path, class
     const [showOriginal, setShowOriginal] = useState(false);
 
     const toggleShowOriginal = () => setShowOriginal(!showOriginal);
-    const toggleShowTranslate = async() => await window.electronAPI.translateGoogle(original);
+    const toggleShowTranslate = async() => await window.electronAPI.translateGoogle(originalOnlyText( original ));
 
     return (
         <Controller
@@ -48,7 +49,7 @@ export const ContainerTranslate = ({ original, value, name, control, path, class
                     </div>
 
                     <div className="flex">
-                        { showOriginal && <p className="ml-14 text-[0.9em]">Original: {original}</p> }
+                        { showOriginal && <p className="ml-14 text-[0.9em]">Original: {originalOnlyText( original )}</p> }
                     </div>
                 </div>
             }

@@ -1,7 +1,7 @@
 import { parseData } from "./parseData";
-import { useAppSelector } from "../store";
 import { UseFormGetValues } from "react-hook-form";
 import { DataTranslateState } from "../store/dataTranslate/dataTranslateSlice";
+import { controlLocalStorage } from "./controlLocalStorage";
 
 
 export const generateTranslate = async(dataTranslate: DataTranslateState, getValues: UseFormGetValues<any>) => {
@@ -17,6 +17,9 @@ export const generateTranslate = async(dataTranslate: DataTranslateState, getVal
         defInjectedData: parse.defInjected,
         prefix: name.split(" ").join("_"),
         // @ts-ignore
-        fileTranslate: { data, name }
+        fileTranslate: { 
+            data: controlLocalStorage("get", "current-translate").data,
+            name
+        }
     })
 }

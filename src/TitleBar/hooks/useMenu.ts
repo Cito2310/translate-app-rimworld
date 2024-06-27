@@ -34,7 +34,10 @@ export const useMenu = () => {
     }
 
     const handleSaveProject = async() => { 
-        await window.electronAPI.saveTranslateProject({ data: stateTranslate });
+        await window.electronAPI.saveTranslateProject({ data: {
+            ...stateTranslate,
+            data: controlLocalStorage("get", "current-translate").data,
+        } });
         setDisplayed(false);
     }
 

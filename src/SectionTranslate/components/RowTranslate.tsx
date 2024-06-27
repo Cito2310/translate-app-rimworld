@@ -43,7 +43,6 @@ export const DefInjectedRow = ({ control, data, getValues }: propsDefInjectedRow
                         key={part.path} 
                         name={part.name} 
                         original={part.original} 
-                        value={part.text}
                         control={ control }
                         path={`defInjected.${data.name}.${replaceForForm( part.path )}`}
                         getValues={ getValues }
